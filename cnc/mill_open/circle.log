@@ -1,0 +1,1163 @@
+[Language]
+UiLanguage=en
+
+[UnitSettings]
+Unit=4
+PaperUnit=4
+
+[DimensionSettings]
+DIMTXT=2.5
+DIMEXE=1.25
+DIMEXO=0.625
+DIMASZ=2.5
+
+[PageSettings]
+PaperSizeName=ANSI A (Letter)
+PaperWidth=215.9
+PaperHeight=279.4
+
+[MultiPageSettings]
+GlueMarginsLeft=10
+GlueMarginsTop=10
+GlueMarginsBottom=10
+GlueMarginsRight=10
+
+[Input]
+DecimalPoint=.
+
+[GraphicsViewColors]
+BackgroundColor=@Variant(\0\0\0\x7f\0\0\0\aRColor\0\x1\xff\xff\0\0\0\0\0\0\0\0\0\x2)
+
+[LibraryBrowser]
+SourceList=@Invalid()
+
+[Application]
+Version=03040200
+
+[AddOns]
+List=scripts/Reset/Reset.js, scripts/File/File.js, scripts/File/AutoSave/AutoSave.js, scripts/File/BitmapExport/BitmapExport.js, scripts/File/CloseFile/CloseFile.js, scripts/File/NewFile/NewFile.js, scripts/File/OpenFile/OpenFile.js, scripts/File/PdfExport/PdfExport.js, scripts/File/Print/Print.js, scripts/File/PrintPreview/PrintPreview.js, scripts/File/Quit/Quit.js, scripts/File/RecentFiles/RecentFiles.js, scripts/File/Save/Save.js, scripts/File/SaveAs/SaveAs.js, scripts/File/SvgImport/SvgImport.js, scripts/Edit/Edit.js, scripts/Edit/AppPreferences/AppPreferences.js, scripts/Edit/AppPreferences/GraphicsViewPreferences/GraphicsViewPreferences.js, scripts/Edit/AppPreferences/GraphicsViewPreferences/ColorPreferences/ColorPreferences.js, scripts/Edit/AppPreferences/GraphicsViewPreferences/FontPreferences/FontPreferences.js, scripts/Edit/AppPreferences/GraphicsViewPreferences/GridPreferences/GridPreferences.js, scripts/Edit/AppPreferences/InputPreferences/InputPreferences.js, scripts/Edit/AppPreferences/LanguagePreferences/LanguagePreferences.js, scripts/Edit/AppPreferences/ScriptingPreferences/ScriptingPreferences.js, scripts/Edit/AppPreferences/StartupPreferences/StartupPreferences.js, scripts/Edit/AppPreferences/StylePreferences/StylePreferences.js, scripts/Edit/AppPreferences/TextPreferences/TextPreferences.js, scripts/Edit/AppPreferences/ToolBarPreferences/ToolBarPreferences.js, scripts/Edit/Copy/Copy.js, scripts/Edit/CopyWithReference/CopyWithReference.js, scripts/Edit/Cut/Cut.js, scripts/Edit/CutWithReference/CutWithReference.js, scripts/Edit/Delete/Delete.js, scripts/Edit/DrawingPreferences/DrawingPreferences.js, scripts/Edit/DrawingPreferences/ColorSettings/ColorSettings.js, scripts/Edit/DrawingPreferences/DimensionSettings/DimensionSettings.js, scripts/Edit/DrawingPreferences/GridSettings/GridSettings.js, scripts/Edit/DrawingPreferences/LinetypeSettings/LinetypeSettings.js, scripts/Edit/DrawingPreferences/PageSettings/PageSettings.js, scripts/Edit/DrawingPreferences/UnitSettings/UnitSettings.js, scripts/Edit/DrawingPreferences/ViewportSettings/ViewportSettings.js, scripts/Edit/Esc/Esc.js, scripts/Edit/Paste/Paste.js, scripts/Edit/Redo/Redo.js, scripts/Edit/Undo/Undo.js, scripts/View/View.js, scripts/View/AutoZoom/AutoZoom.js, scripts/View/CommandLineFocus/CommandLineFocus.js, scripts/View/DraftMode/DraftMode.js, scripts/View/IsometricView/IsometricView.js, scripts/View/IsometricView/IsometricGridLeft/IsometricGridLeft.js, scripts/View/IsometricView/IsometricGridOff/IsometricGridOff.js, scripts/View/IsometricView/IsometricGridRight/IsometricGridRight.js, scripts/View/IsometricView/IsometricGridTop/IsometricGridTop.js, scripts/View/LinetypeMode/LinetypeMode.js, scripts/View/OptionsToolBarFocus/OptionsToolBarFocus.js, scripts/View/PanZoom/PanZoom.js, scripts/View/PreviousView/PreviousView.js, scripts/View/ToggleGrid/ToggleGrid.js, scripts/View/ToggleStatusBar/ToggleStatusBar.js, scripts/View/ViewToolBars/ViewToolBars.js, scripts/View/WindowZoom/WindowZoom.js, scripts/View/ZoomIn/ZoomIn.js, scripts/View/ZoomOut/ZoomOut.js, scripts/View/ZoomToSelection/ZoomToSelection.js, scripts/Select/Select.js, scripts/Select/DeselectAll/DeselectAll.js, scripts/Select/InvertSelection/InvertSelection.js, scripts/Select/SelectAll/SelectAll.js, scripts/Select/SelectContour/SelectContour.js, scripts/Select/SelectIntersectedEntities/SelectIntersectedEntities.js, scripts/Select/SelectLayerByEntity/SelectLayerByEntity.js, scripts/Select/SelectRectangle/SelectRectangle.js, scripts/Draw/Draw.js, scripts/Draw/Arc/Arc.js, scripts/Draw/Arc/Arc2PA/Arc2PA.js, scripts/Draw/Arc/Arc2PR/Arc2PR.js, scripts/Draw/Arc/Arc3P/Arc3P.js, scripts/Draw/Arc/ArcConcentric/ArcConcentric.js, scripts/Draw/Arc/ArcConcentricThrough/ArcConcentricThrough.js, scripts/Draw/Arc/ArcCPA/ArcCPA.js, scripts/Draw/Arc/ArcTangential/ArcTangential.js, scripts/Draw/Circle/Circle.js, scripts/Draw/Circle/Circle2P/Circle2P.js, scripts/Draw/Circle/Circle2PR/Circle2PR.js, scripts/Draw/Circle/Circle2TP/Circle2TP.js, scripts/Draw/Circle/Circle2TR/Circle2TR.js, scripts/Draw/Circle/Circle3P/Circle3P.js, scripts/Draw/Circle/Circle3T/Circle3T.js, scripts/Draw/Circle/CircleConcentric/CircleConcentric.js, scripts/Draw/Circle/CircleConcentricThrough/CircleConcentricThrough.js, scripts/Draw/Circle/CircleCP/CircleCP.js, scripts/Draw/Circle/CircleCR/CircleCR.js, scripts/Draw/Circle/CircleT2P/CircleT2P.js, scripts/Draw/Dimension/Dimension.js, scripts/Draw/Dimension/DimAligned/DimAligned.js, scripts/Draw/Dimension/DimAngular/DimAngular.js, scripts/Draw/Dimension/DimDiametric/DimDiametric.js, scripts/Draw/Dimension/DimHorizontal/DimHorizontal.js, scripts/Draw/Dimension/DimOrdinate/DimOrdinate.js, scripts/Draw/Dimension/DimRadial/DimRadial.js, scripts/Draw/Dimension/DimRegen/DimRegen.js, scripts/Draw/Dimension/DimRotated/DimRotated.js, scripts/Draw/Dimension/DimVertical/DimVertical.js, scripts/Draw/Dimension/Leader/Leader.js, scripts/Draw/Ellipse/Ellipse.js, scripts/Draw/Ellipse/EllipseArcCPPA/EllipseArcCPPA.js, scripts/Draw/Ellipse/EllipseCPP/EllipseCPP.js, scripts/Draw/Ellipse/EllipseInscribedQuad/EllipseInscribedQuad.js, scripts/Draw/Hatch/Hatch.js, scripts/Draw/Image/Image.js, scripts/Draw/Line/Line.js, scripts/Draw/Line/Line2P/Line2P.js, scripts/Draw/Line/LineAngle/LineAngle.js, scripts/Draw/Line/LineBisector/LineBisector.js, scripts/Draw/Line/LineFreehand/LineFreehand.js, scripts/Draw/Line/LineHorizontal/LineHorizontal.js, scripts/Draw/Line/LineOrthogonal/LineOrthogonal.js, scripts/Draw/Line/LineOrthogonalTangent/LineOrthogonalTangent.js, scripts/Draw/Line/LineParallel/LineParallel.js, scripts/Draw/Line/LineParallelThrough/LineParallelThrough.js, scripts/Draw/Line/LinePolygonCP/LinePolygonCP.js, scripts/Draw/Line/LinePolygonPP/LinePolygonPP.js, scripts/Draw/Line/LineRectangle/LineRectangle.js, scripts/Draw/Line/LineRectangleSize/LineRectangleSize.js, scripts/Draw/Line/LineRelativeAngle/LineRelativeAngle.js, scripts/Draw/Line/LineTangent1/LineTangent1.js, scripts/Draw/Line/LineTangent2/LineTangent2.js, scripts/Draw/Line/LineVertical/LineVertical.js, scripts/Draw/Point/Point.js, scripts/Draw/Point/Point1P/Point1P.js, scripts/Draw/Polyline/Polyline.js, scripts/Draw/Polyline/DrawPolyline/DrawPolyline.js, scripts/Draw/Spline/Spline.js, scripts/Draw/Spline/SplineControlPoints/SplineControlPoints.js, scripts/Draw/Text/Text.js, scripts/Draw/Text/TextDialog/TextDialog.js, scripts/Modify/Modify.js, scripts/Modify/AutoTrim/AutoTrim.js, scripts/Modify/Bevel/Bevel.js, scripts/Modify/BreakOut/BreakOut.js, scripts/Modify/Divide/Divide.js, scripts/Modify/EditText/EditText.js, scripts/Modify/Explode/Explode.js, scripts/Modify/Lengthen/Lengthen.js, scripts/Modify/Mirror/Mirror.js, scripts/Modify/Reverse/Reverse.js, scripts/Modify/Rotate/Rotate.js, scripts/Modify/Rotate2/Rotate2.js, scripts/Modify/Round/Round.js, scripts/Modify/Scale/Scale.js, scripts/Modify/Stretch/Stretch.js, scripts/Modify/ToBack/ToBack.js, scripts/Modify/ToFront/ToFront.js, scripts/Modify/Translate/Translate.js, scripts/Modify/TranslateRotate/TranslateRotate.js, scripts/Modify/Trim/Trim.js, scripts/Modify/TrimBoth/TrimBoth.js, scripts/Snap/Snap.js, scripts/Snap/LockRelativeZero/LockRelativeZero.js, scripts/Snap/RestrictHorizontal/RestrictHorizontal.js, scripts/Snap/RestrictOff/RestrictOff.js, scripts/Snap/RestrictOrthogonal/RestrictOrthogonal.js, scripts/Snap/RestrictVertical/RestrictVertical.js, scripts/Snap/SetRelativeZero/SetRelativeZero.js, scripts/Snap/SnapAuto/SnapAuto.js, scripts/Snap/SnapCenter/SnapCenter.js, scripts/Snap/SnapCoordinate/SnapCoordinate.js, scripts/Snap/SnapCoordinatePolar/SnapCoordinatePolar.js, scripts/Snap/SnapDistance/SnapDistance.js, scripts/Snap/SnapEnd/SnapEnd.js, scripts/Snap/SnapFree/SnapFree.js, scripts/Snap/SnapGrid/SnapGrid.js, scripts/Snap/SnapIntersection/SnapIntersection.js, scripts/Snap/SnapIntersectionManual/SnapIntersectionManual.js, scripts/Snap/SnapMiddle/SnapMiddle.js, scripts/Snap/SnapMiddleManual/SnapMiddleManual.js, scripts/Snap/SnapOnEntity/SnapOnEntity.js, scripts/Snap/SnapPerpendicular/SnapPerpendicular.js, scripts/Snap/SnapReference/SnapReference.js, scripts/Snap/SnapXManual/SnapXManual.js, scripts/Snap/SnapYManual/SnapYManual.js, scripts/Information/Information.js, scripts/Information/InfoAngle/InfoAngle.js, scripts/Information/InfoArea/InfoArea.js, scripts/Information/InfoDistanceEP/InfoDistanceEP.js, scripts/Information/InfoDistancePP/InfoDistancePP.js, scripts/Information/InfoPosition/InfoPosition.js, scripts/Information/InfoPositionPol/InfoPositionPol.js, scripts/Information/InfoPositionPolRel/InfoPositionPolRel.js, scripts/Information/InfoPositionRel/InfoPositionRel.js, scripts/Layer/Layer.js, scripts/Layer/AddLayer/AddLayer.js, scripts/Layer/DeselectLayer/DeselectLayer.js, scripts/Layer/EditLayer/EditLayer.js, scripts/Layer/HideAllLayers/HideAllLayers.js, scripts/Layer/RemoveLayer/RemoveLayer.js, scripts/Layer/SelectLayer/SelectLayer.js, scripts/Layer/ShowActiveLayer/ShowActiveLayer.js, scripts/Layer/ShowAllLayers/ShowAllLayers.js, scripts/Layer/ToggleLayerVisibility/ToggleLayerVisibility.js, scripts/Block/Block.js, scripts/Block/AddBlock/AddBlock.js, scripts/Block/CreateBlock/CreateBlock.js, scripts/Block/CreateLibraryItem/CreateLibraryItem.js, scripts/Block/DeselectBlockReferences/DeselectBlockReferences.js, scripts/Block/EditBlock/EditBlock.js, scripts/Block/EditFromReference/EditFromReference.js, scripts/Block/EditMainDrawing/EditMainDrawing.js, scripts/Block/HideAllBlocks/HideAllBlocks.js, scripts/Block/InsertBlock/InsertBlock.js, scripts/Block/InsertBlockItem/InsertBlockItem.js, scripts/Block/InsertScriptItem/InsertScriptItem.js, scripts/Block/RemoveBlock/RemoveBlock.js, scripts/Block/RenameBlock/RenameBlock.js, scripts/Block/SelectBlockReferences/SelectBlockReferences.js, scripts/Block/ShowAllBlocks/ShowAllBlocks.js, scripts/Block/ToggleBlockVisibility/ToggleBlockVisibility.js, scripts/Window/Window.js, scripts/Window/CloseAll/CloseAll.js, scripts/Window/NextWindow/NextWindow.js, scripts/Window/PreviousWindow/PreviousWindow.js, scripts/Widgets/Widgets.js, scripts/Widgets/AutoZoomView/AutoZoomView.js, scripts/Widgets/BlockList/BlockList.js, scripts/Widgets/CadToolBar/CadToolBar.js, scripts/Widgets/CommandLine/CommandLine.js, scripts/Widgets/CoordinateDisplay/CoordinateDisplay.js, scripts/Widgets/DirectoryList/DirectoryList.js, scripts/Widgets/FirstStart/FirstStart.js, scripts/Widgets/LayerList/LayerList.js, scripts/Widgets/LibraryBrowser/LibraryBrowser.js, scripts/Widgets/MouseDisplay/MouseDisplay.js, scripts/Widgets/OptionsToolBar/OptionsToolBar.js, scripts/Widgets/PenToolBar/PenToolBar.js, scripts/Widgets/ProgressBar/ProgressBar.js, scripts/Widgets/PropertyEditor/PropertyEditor.js, scripts/Widgets/SelectionDisplay/SelectionDisplay.js, scripts/Widgets/StatusBar/StatusBar.js, scripts/Widgets/TabBar/TabBar.js, scripts/Widgets/Viewport/Viewport.js, scripts/Misc/Misc.js, scripts/Misc/Examples/Examples.js, scripts/Misc/Examples/BlockExamples/BlockExamples.js, scripts/Misc/Examples/BlockExamples/ExAddBlock/ExAddBlock.js, scripts/Misc/Examples/BlockExamples/ExFixBlockNames/ExFixBlockNames.js, scripts/Misc/Examples/CommandLineExamples/CommandLineExamples.js, scripts/Misc/Examples/CommandLineExamples/ExSetColor/ExSetColor.js, scripts/Misc/Examples/DrawExamples/DrawExamples.js, scripts/Misc/Examples/DrawExamples/ExDrawBoundingBox/ExDrawBoundingBox.js, scripts/Misc/Examples/DrawExamples/ExDrawColors/ExDrawColors.js, scripts/Misc/Examples/DrawExamples/ExText/ExText.js, scripts/Misc/Examples/DrawExamples/ExThreePoints/ExThreePoints.js, scripts/Misc/Examples/IOExamples/IOExamples.js, scripts/Misc/Examples/IOExamples/ExDumpPolyline/ExDumpPolyline.js, scripts/Misc/Examples/IOExamples/ExImportPoints/ExImportPoints.js, scripts/Misc/Examples/IOExamples/MolImport/MolImport.js, scripts/Misc/Examples/LayerExamples/LayerExamples.js, scripts/Misc/Examples/LayerExamples/ExLayerWhiteToBlack/ExLayerWhiteToBlack.js, scripts/Misc/Examples/ListenerExamples/ListenerExamples.js, scripts/Misc/Examples/ListenerExamples/ExTransactionListener/ExTransactionListener.js, scripts/Misc/Examples/MathExamples/MathExamples.js, scripts/Misc/Examples/MathExamples/ExMathSpiral/ExMathSpiral.js, scripts/Misc/Examples/ModifyExamples/ModifyExamples.js, scripts/Misc/Examples/ModifyExamples/ExChangeFontToArial/ExChangeFontToArial.js, scripts/Misc/Examples/QtExamples/QtExamples.js, scripts/Misc/Examples/QtExamples/ExMainWindow/ExMainWindow.js, scripts/Misc/Examples/SystemExamples/SystemExamples.js, scripts/Misc/Examples/SystemExamples/ExDirListing/ExDirListing.js, scripts/Misc/MiscDraw/MiscDraw.js, scripts/Misc/MiscDraw/LineBoxJoint/LineBoxJoint.js, scripts/Misc/MiscDraw/LineDove/LineDove.js, scripts/Misc/MiscDraw/LineRadicalAxis/LineRadicalAxis.js, scripts/Misc/MiscDraw/LineSimilarityAxes/LineSimilarityAxes.js, scripts/Misc/MiscDraw/PointPole/PointPole.js, scripts/Misc/MiscDraw/PointPowerCenter/PointPowerCenter.js, scripts/Misc/Screencast/Screencast.js, scripts/Misc/Screencast/ScMirrored/ScMirrored.js, scripts/Misc/Tutorials/Tutorials.js, scripts/Misc/Tutorials/CommandLineTools/CommandLineTools.js, scripts/Misc/Tutorials/CommandLineTools/CreatingDrawing/CreatingDrawing.js, scripts/Misc/Tutorials/CommandLineTools/ExPdfExport/ExPdfExport.js, scripts/Misc/Tutorials/CommandLineTools/ExSvgExport/ExSvgExport.js, scripts/Misc/Tutorials/MenusAndToolBars/MenusAndToolBars.js, scripts/Misc/Tutorials/PersistentWidgets/PersistentWidgets.js, :scripts/Cam/Cam.js, :scripts/Cam/CamExport/CamExport.js, :scripts/Cam/CamImport/CamImport.js, :scripts/Cam/CamSimulation/CamSimulation.js, :scripts/Cam/GerberImport/GerberImport.js, :scripts/Cam/ImportExport/GerberImporter/GerberImporter.js, :scripts/Cam/Widgets/TrialExpired/TrialExpired.js, :scripts/Pro/Block/Attribute/Attribute.js, :scripts/Pro/Block/Attribute/AttributeDefinition/AttributeDefinition.js, :scripts/Pro/Block/Attribute/AttributeSynchronization/AttributeSynchronization.js, :scripts/Pro/Block/PurgeBlocks/PurgeBlocks.js, :scripts/Pro/Draw/Point/PointMN/PointMN.js, :scripts/Pro/Draw/Point/PointNP/PointNP.js, :scripts/Pro/Draw/Polyline/PolylineAppendNode/PolylineAppendNode.js, :scripts/Pro/Draw/Polyline/PolylineDeleteNode/PolylineDeleteNode.js, :scripts/Pro/Draw/Polyline/PolylineDeleteNodesBetween/PolylineDeleteNodesBetween.js, :scripts/Pro/Draw/Polyline/PolylineEquidistant/PolylineEquidistant.js, :scripts/Pro/Draw/Polyline/PolylineFromSegments/PolylineFromSegments.js, :scripts/Pro/Draw/Polyline/PolylineInsertNode/PolylineInsertNode.js, :scripts/Pro/Draw/Polyline/PolylineSimplify/PolylineSimplify.js, :scripts/Pro/Draw/Polyline/PolylineTrim/PolylineTrim.js, :scripts/Pro/Draw/Spline/SplineFitPoints/SplineFitPoints.js, :scripts/Pro/Edit/AppPreferences/ShortcutPreferences/ShortcutPreferences.js, :scripts/Pro/Edit/DrawingPreferences/MultiPageSettings/MultiPageSettings.js, :scripts/Pro/Edit/DrawingPreferences/PageTagSettings/PageTagSettings.js, :scripts/Pro/Edit/SearchReplace/SearchReplace.js, :scripts/Pro/Edit/SubstituteFonts/SubstituteFonts.js, :scripts/Pro/File/Compare/Compare.js, :scripts/Pro/File/NewFromTemplate/NewFromTemplate.js, :scripts/Pro/File/PdfExportPro/PdfExportPro.js, :scripts/Pro/File/PrintPreviewPro/PrintPreviewPro.js, :scripts/Pro/File/PrintPro/PrintPro.js, :scripts/Pro/File/SvgExport/SvgExport.js, :scripts/Pro/File/SvgExportAs/SvgExportAs.js, :scripts/Pro/Help/CheckForProUpdates/CheckForProUpdates.js, :scripts/Pro/ImportExport/SvgExporter/SvgExporter.js, :scripts/Pro/Information/InfoTotalLength/InfoTotalLength.js, :scripts/Pro/Layer/PurgeLayers/PurgeLayers.js, :scripts/Pro/Modify/Align/Align.js, :scripts/Pro/Modify/ClipToRectangle/ClipToRectangle.js, :scripts/Pro/Modify/Duplicates/Duplicates.js, :scripts/Pro/Modify/ExplodeText/ExplodeText.js, :scripts/Pro/Modify/SplitIntoEqualParts/SplitIntoEqualParts.js, :scripts/Pro/Modify/ZeroLengthDetection/ZeroLengthDetection.js, :scripts/Pro/Projection/IsometricProjection/IsoProjectCylindrical/IsoProjectCylindrical.js, :scripts/Pro/Projection/MatrixTransformation/MatrixTransformation.js, :scripts/Pro/Projection/OrthographicProjection/OrthographicProjection.js, :scripts/Pro/Projection/OrthographicProjection/OrthoProjectCylindrical/OrthoProjectCylindrical.js, :scripts/Pro/Select/AdvancedSelection/AdvancedSelection.js, :scripts/Pro/Select/SelectPolygon/SelectPolygon.js, :scripts/Pro/Select/SelectView/SelectView.js, :scripts/Pro/Tools/Tools.js, :scripts/Pro/Tools/BoundingBox/BoundingBox.js, :scripts/Pro/Tools/Dwg2Bmp/Dwg2Bmp.js, :scripts/Pro/Tools/Dwg2Pdf/Dwg2Pdf.js, :scripts/Pro/Tools/Dwg2Svg/Dwg2Svg.js, :scripts/Pro/View/AddView/AddView.js, :scripts/Pro/View/EditView/EditView.js, :scripts/Pro/View/PickView/PickView.js, :scripts/Pro/View/RemoveView/RemoveView.js, :scripts/Pro/Widgets/ClipboardDisplay/ClipboardDisplay.js, :scripts/Pro/Widgets/TrialExpired/TrialExpired.js, :scripts/Pro/Widgets/ViewList/ViewList.js, :scripts/Pro/Window/CascadeWindows/CascadeWindows.js, :scripts/Pro/Window/FullScreen/FullScreen.js, :scripts/Pro/Window/TileWindows/TileWindows.js, scripts/Help/Help.js, scripts/Help/About/About.js, scripts/Help/BrowseAddOns/BrowseAddOns.js, scripts/Help/BrowseUserManual/BrowseUserManual.js, scripts/Help/CheckForUpdates/CheckForUpdates.js, scripts/Help/FAQ/FAQ.js, scripts/Help/Forum/Forum.js, scripts/Help/ReportBug/ReportBug.js, scripts/Help/ReportTranslationError/ReportTranslationError.js, scripts/Help/ShowReadme/ShowReadme.js, scripts/Help/Website/Website.js, scripts/ImportExport/SvgImporter/SvgImporter.js, scripts/Navigation/DefaultNavigation/DefaultNavigation.js, scripts/Projection/Projection.js, scripts/Projection/IsometricProjection/IsometricProjection.js, scripts/Projection/IsometricProjection/IsoProject/IsoProject.js
+
+[Trial]
+CAM=1
+DWG=1
+Pro%20Tools=1
+
+[CircleCR]
+Radius=1
+
+[CamExport]
+Config=GCode
+Path=/Users/ja/projects/duschlampe/cnc/mill_open
+
+[HatchDialog]
+Type=SolidFill
+Pattern=ACAD_ISO02W100
+Scale=1.0
+Angle=0.0
+
+[SaveAs]
+Path=/Users/ja/projects/duschlampe/cnc/mill_open
+
+[RecentFiles]
+Files=/Users/ja/projects/duschlampe/cnc/mill_open/circle.dxf
+
+Output fileName: '/Users/ja/projects/duschlampe/cnc/mill_open/circle.nc'
+  this.getSplitFullCircles() = false
+  this.getRampOn() = -1
+  this.getRampOff() = -1
+  this.getPathOrientation() = 0
+  this.getIncrementalXYZ() = false
+  this.getTolerance() = 0.0005
+writeLine: N10 G00 Z100
+Identifying paths...
+getContour: entityId: 25
+appendToContour: prepend: false
+  shape: RLine(RShape(address: "0x19cac130"), startPoint: RVector(0, 0, 0), endPoint: RVector(64, 32, 0))
+  candidates found: 3
+  appending to: RVector(64, 32, 0)
+appendToContour: prepend: false
+  shape: RArc(RShape(address: "0x17aa99e0"), center: RVector(32, 32, 0), radius: 32, startAngle: 0, endAngle: 6.28319, startPoint: RVector(64, 32, 0), endPoint: RVector(64, 32, 0), reversed: false)
+  candidates found: 3
+  appending to: RVector(64, 32, 0)
+appendToContour: prepend: true
+  shape: RLine(RShape(address: "0x1b58f840"), startPoint: RVector(0, 0, 0), endPoint: RVector(64, 32, 0))
+  candidates found: 1
+  prepending to: RVector(0, 0, 0)
+getContour: entityId: 27
+appendToContour: prepend: false
+appendToContour: prepend: true
+Paths identified: 2
+  open: 2
+  closed: 0
+Indexing path entry points...
+Processing paths...
+  open path found
+exportContourEntity: RLineEntity(0x17ac4350)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0, 0, 0)
+    endPoint: RVector(64, 32, 0)
+    exporting: RLine(RShape(address: "0x17ac43a0"), startPoint: RVector(0, 0, 0), endPoint: RVector(64, 32, 0))
+writeLine: N20 X0 Y0
+writeLine: N30 Z2 F200
+writeLine: N40 G01 Z-1
+writeLine: N50 X64 Y32
+exportContourEntity: RArcEntity(0x17a9a860)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(64, 32, 0)
+    endPoint: RVector(64, 32, 0)
+    exporting: RArc(RShape(address: "0x17a9a8b0"), center: RVector(32, 32, 0), radius: 32, startAngle: 0, endAngle: 6.28319, startPoint: RVector(64, 32, 0), endPoint: RVector(64, 32, 0), reversed: false)
+writeLine: N60 G03 X64 Y32 I-32 J0
+  path with one entity found
+exportContourEntity: RHatchEntity(0x17a889a0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+exporting polyline, text or hatch
+exportContourEntity: RSplineEntity(0x17aa81a0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+exporting spline
+exportContourEntity: RLineEntity(0x539cb20)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(64, 32, 0)
+    endPoint: RVector(63.9584, 33.6467, 0)
+    exporting: RLine(RShape(address: "0x539cb70"), startPoint: RVector(64, 32, 0), endPoint: RVector(63.9584, 33.6467, 0))
+writeLine: N70 G01 X63.958 Y33.647
+exportContourEntity: RLineEntity(0x53be780)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.9584, 33.6467, 0)
+    endPoint: RVector(63.8348, 35.2718, 0)
+    exporting: RLine(RShape(address: "0x53be7d0"), startPoint: RVector(63.9584, 33.6467, 0), endPoint: RVector(63.8348, 35.2718, 0))
+writeLine: N80 X63.835 Y35.272
+exportContourEntity: RLineEntity(0x53cc350)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.8348, 35.2718, 0)
+    endPoint: RVector(63.6313, 36.8733, 0)
+    exporting: RLine(RShape(address: "0x53cc3a0"), startPoint: RVector(63.8348, 35.2718, 0), endPoint: RVector(63.6313, 36.8733, 0))
+writeLine: N90 X63.631 Y36.873
+exportContourEntity: RLineEntity(0x53be3f0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.6313, 36.8733, 0)
+    endPoint: RVector(63.3499, 38.4491, 0)
+    exporting: RLine(RShape(address: "0x53be440"), startPoint: RVector(63.6313, 36.8733, 0), endPoint: RVector(63.3499, 38.4491, 0))
+writeLine: N100 X63.35 Y38.449
+exportContourEntity: RLineEntity(0x53c19d0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.3499, 38.4491, 0)
+    endPoint: RVector(62.9926, 39.9973, 0)
+    exporting: RLine(RShape(address: "0x53c1a20"), startPoint: RVector(63.3499, 38.4491, 0), endPoint: RVector(62.9926, 39.9973, 0))
+writeLine: N110 X62.993 Y39.997
+exportContourEntity: RLineEntity(0x53c1e20)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(62.9926, 39.9973, 0)
+    endPoint: RVector(62.5613, 41.5158, 0)
+    exporting: RLine(RShape(address: "0x53c1e70"), startPoint: RVector(62.9926, 39.9973, 0), endPoint: RVector(62.5613, 41.5158, 0))
+writeLine: N120 X62.561 Y41.516
+exportContourEntity: RLineEntity(0x53c2270)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(62.5613, 41.5158, 0)
+    endPoint: RVector(62.0582, 43.0027, 0)
+    exporting: RLine(RShape(address: "0x53c22c0"), startPoint: RVector(62.5613, 41.5158, 0), endPoint: RVector(62.0582, 43.0027, 0))
+writeLine: N130 X62.058 Y43.003
+exportContourEntity: RLineEntity(0x1686d9c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(62.0582, 43.0027, 0)
+    endPoint: RVector(61.4853, 44.4558, 0)
+    exporting: RLine(RShape(address: "0x1686da10"), startPoint: RVector(62.0582, 43.0027, 0), endPoint: RVector(61.4853, 44.4558, 0))
+writeLine: N140 X61.485 Y44.456
+exportContourEntity: RLineEntity(0x168af660)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(61.4853, 44.4558, 0)
+    endPoint: RVector(60.8445, 45.8733, 0)
+    exporting: RLine(RShape(address: "0x168af6b0"), startPoint: RVector(61.4853, 44.4558, 0), endPoint: RVector(60.8445, 45.8733, 0))
+writeLine: N150 X60.844 Y45.873
+exportContourEntity: RLineEntity(0x16864240)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(60.8445, 45.8733, 0)
+    endPoint: RVector(60.1378, 47.2531, 0)
+    exporting: RLine(RShape(address: "0x16864290"), startPoint: RVector(60.8445, 45.8733, 0), endPoint: RVector(60.1378, 47.2531, 0))
+writeLine: N160 X60.138 Y47.253
+exportContourEntity: RLineEntity(0x19cc7120)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(60.1378, 47.2531, 0)
+    endPoint: RVector(59.3673, 48.5932, 0)
+    exporting: RLine(RShape(address: "0x19cc7170"), startPoint: RVector(60.1378, 47.2531, 0), endPoint: RVector(59.3673, 48.5932, 0))
+writeLine: N170 X59.367 Y48.593
+exportContourEntity: RLineEntity(0x168b0130)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(59.3673, 48.5932, 0)
+    endPoint: RVector(58.5349, 49.8915, 0)
+    exporting: RLine(RShape(address: "0x168b0180"), startPoint: RVector(59.3673, 48.5932, 0), endPoint: RVector(58.5349, 49.8915, 0))
+writeLine: N180 X58.535 Y49.892
+exportContourEntity: RLineEntity(0x168649b0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(58.5349, 49.8915, 0)
+    endPoint: RVector(57.6427, 51.1461, 0)
+    exporting: RLine(RShape(address: "0x16864a00"), startPoint: RVector(58.5349, 49.8915, 0), endPoint: RVector(57.6427, 51.1461, 0))
+writeLine: N190 X57.643 Y51.146
+exportContourEntity: RLineEntity(0x168b3f00)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(57.6427, 51.1461, 0)
+    endPoint: RVector(56.6928, 52.355, 0)
+    exporting: RLine(RShape(address: "0x168b3f50"), startPoint: RVector(57.6427, 51.1461, 0), endPoint: RVector(56.6928, 52.355, 0))
+writeLine: N200 X56.693 Y52.355
+exportContourEntity: RLineEntity(0x168d3f60)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(56.6928, 52.355, 0)
+    endPoint: RVector(55.687, 53.5161, 0)
+    exporting: RLine(RShape(address: "0x168d3fb0"), startPoint: RVector(56.6928, 52.355, 0), endPoint: RVector(55.687, 53.5161, 0))
+writeLine: N210 X55.687 Y53.516
+exportContourEntity: RLineEntity(0x16865820)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(55.687, 53.5161, 0)
+    endPoint: RVector(54.6274, 54.6274, 0)
+    exporting: RLine(RShape(address: "0x16865870"), startPoint: RVector(55.687, 53.5161, 0), endPoint: RVector(54.6274, 54.6274, 0))
+writeLine: N220 X54.627 Y54.627
+exportContourEntity: RLineEntity(0x168a9f70)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(54.6274, 54.6274, 0)
+    endPoint: RVector(53.5161, 55.687, 0)
+    exporting: RLine(RShape(address: "0x168a9fc0"), startPoint: RVector(54.6274, 54.6274, 0), endPoint: RVector(53.5161, 55.687, 0))
+writeLine: N230 X53.516 Y55.687
+exportContourEntity: RLineEntity(0x16883560)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(53.5161, 55.687, 0)
+    endPoint: RVector(52.355, 56.6928, 0)
+    exporting: RLine(RShape(address: "0x168835b0"), startPoint: RVector(53.5161, 55.687, 0), endPoint: RVector(52.355, 56.6928, 0))
+writeLine: N240 X52.355 Y56.693
+exportContourEntity: RLineEntity(0x168a3110)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(52.355, 56.6928, 0)
+    endPoint: RVector(51.1461, 57.6427, 0)
+    exporting: RLine(RShape(address: "0x168a3160"), startPoint: RVector(52.355, 56.6928, 0), endPoint: RVector(51.1461, 57.6427, 0))
+writeLine: N250 X51.146 Y57.643
+exportContourEntity: RLineEntity(0x16866990)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(51.1461, 57.6427, 0)
+    endPoint: RVector(49.8915, 58.5349, 0)
+    exporting: RLine(RShape(address: "0x168669e0"), startPoint: RVector(51.1461, 57.6427, 0), endPoint: RVector(49.8915, 58.5349, 0))
+writeLine: N260 X49.892 Y58.535
+exportContourEntity: RLineEntity(0x168bf5a0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(49.8915, 58.5349, 0)
+    endPoint: RVector(48.5932, 59.3673, 0)
+    exporting: RLine(RShape(address: "0x168bf5f0"), startPoint: RVector(49.8915, 58.5349, 0), endPoint: RVector(48.5932, 59.3673, 0))
+writeLine: N270 X48.593 Y59.367
+exportContourEntity: RLineEntity(0x168b5380)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(48.5932, 59.3673, 0)
+    endPoint: RVector(47.2531, 60.1378, 0)
+    exporting: RLine(RShape(address: "0x168b53d0"), startPoint: RVector(48.5932, 59.3673, 0), endPoint: RVector(47.2531, 60.1378, 0))
+writeLine: N280 X47.253 Y60.138
+exportContourEntity: RLineEntity(0x168cee20)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(47.2531, 60.1378, 0)
+    endPoint: RVector(45.8733, 60.8445, 0)
+    exporting: RLine(RShape(address: "0x168cee70"), startPoint: RVector(47.2531, 60.1378, 0), endPoint: RVector(45.8733, 60.8445, 0))
+writeLine: N290 X45.873 Y60.844
+exportContourEntity: RLineEntity(0x168a24e0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(45.8733, 60.8445, 0)
+    endPoint: RVector(44.4558, 61.4853, 0)
+    exporting: RLine(RShape(address: "0x168a2530"), startPoint: RVector(45.8733, 60.8445, 0), endPoint: RVector(44.4558, 61.4853, 0))
+writeLine: N300 X44.456 Y61.485
+exportContourEntity: RLineEntity(0x19ca4f40)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(44.4558, 61.4853, 0)
+    endPoint: RVector(43.0027, 62.0582, 0)
+    exporting: RLine(RShape(address: "0x19ca4f90"), startPoint: RVector(44.4558, 61.4853, 0), endPoint: RVector(43.0027, 62.0582, 0))
+writeLine: N310 X43.003 Y62.058
+exportContourEntity: RLineEntity(0x19c666f0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(43.0027, 62.0582, 0)
+    endPoint: RVector(41.5158, 62.5613, 0)
+    exporting: RLine(RShape(address: "0x19c66740"), startPoint: RVector(43.0027, 62.0582, 0), endPoint: RVector(41.5158, 62.5613, 0))
+writeLine: N320 X41.516 Y62.561
+exportContourEntity: RLineEntity(0x19ca25a0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(41.5158, 62.5613, 0)
+    endPoint: RVector(39.9973, 62.9926, 0)
+    exporting: RLine(RShape(address: "0x19ca25f0"), startPoint: RVector(41.5158, 62.5613, 0), endPoint: RVector(39.9973, 62.9926, 0))
+writeLine: N330 X39.997 Y62.993
+exportContourEntity: RLineEntity(0x16847bd0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(39.9973, 62.9926, 0)
+    endPoint: RVector(38.4491, 63.3499, 0)
+    exporting: RLine(RShape(address: "0x16847c20"), startPoint: RVector(39.9973, 62.9926, 0), endPoint: RVector(38.4491, 63.3499, 0))
+writeLine: N340 X38.449 Y63.35
+exportContourEntity: RLineEntity(0x181ca9c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(38.4491, 63.3499, 0)
+    endPoint: RVector(36.8733, 63.6313, 0)
+    exporting: RLine(RShape(address: "0x181caa10"), startPoint: RVector(38.4491, 63.3499, 0), endPoint: RVector(36.8733, 63.6313, 0))
+writeLine: N350 X36.873 Y63.631
+exportContourEntity: RLineEntity(0x19c5d2e0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(36.8733, 63.6313, 0)
+    endPoint: RVector(35.2718, 63.8348, 0)
+    exporting: RLine(RShape(address: "0x19c5d330"), startPoint: RVector(36.8733, 63.6313, 0), endPoint: RVector(35.2718, 63.8348, 0))
+writeLine: N360 X35.272 Y63.835
+exportContourEntity: RLineEntity(0x1686bf00)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(35.2718, 63.8348, 0)
+    endPoint: RVector(33.6467, 63.9584, 0)
+    exporting: RLine(RShape(address: "0x1686bf50"), startPoint: RVector(35.2718, 63.8348, 0), endPoint: RVector(33.6467, 63.9584, 0))
+writeLine: N370 X33.647 Y63.958
+exportContourEntity: RLineEntity(0x19cb0050)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(33.6467, 63.9584, 0)
+    endPoint: RVector(32, 64, 0)
+    exporting: RLine(RShape(address: "0x19cb00a0"), startPoint: RVector(33.6467, 63.9584, 0), endPoint: RVector(32, 64, 0))
+writeLine: N380 X32 Y64
+exportContourEntity: RSplineEntity(0x19cc7210)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+exporting spline
+exportContourEntity: RLineEntity(0x19cadfa0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(32, 64, 0)
+    endPoint: RVector(30.3533, 63.9584, 0)
+    exporting: RLine(RShape(address: "0x19cadff0"), startPoint: RVector(32, 64, 0), endPoint: RVector(30.3533, 63.9584, 0))
+writeLine: N390 X30.353 Y63.958
+exportContourEntity: RLineEntity(0x19ca6a90)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(30.3533, 63.9584, 0)
+    endPoint: RVector(28.7282, 63.8348, 0)
+    exporting: RLine(RShape(address: "0x19ca6ae0"), startPoint: RVector(30.3533, 63.9584, 0), endPoint: RVector(28.7282, 63.8348, 0))
+writeLine: N400 X28.728 Y63.835
+exportContourEntity: RLineEntity(0x502c7e0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(28.7282, 63.8348, 0)
+    endPoint: RVector(27.1267, 63.6313, 0)
+    exporting: RLine(RShape(address: "0x502c830"), startPoint: RVector(28.7282, 63.8348, 0), endPoint: RVector(27.1267, 63.6313, 0))
+writeLine: N410 X27.127 Y63.631
+exportContourEntity: RLineEntity(0x19c635f0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(27.1267, 63.6313, 0)
+    endPoint: RVector(25.5509, 63.3499, 0)
+    exporting: RLine(RShape(address: "0x19c63640"), startPoint: RVector(27.1267, 63.6313, 0), endPoint: RVector(25.5509, 63.3499, 0))
+writeLine: N420 X25.551 Y63.35
+exportContourEntity: RLineEntity(0x19c492c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(25.5509, 63.3499, 0)
+    endPoint: RVector(24.0027, 62.9926, 0)
+    exporting: RLine(RShape(address: "0x19c49310"), startPoint: RVector(25.5509, 63.3499, 0), endPoint: RVector(24.0027, 62.9926, 0))
+writeLine: N430 X24.003 Y62.993
+exportContourEntity: RLineEntity(0x19cab420)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(24.0027, 62.9926, 0)
+    endPoint: RVector(22.4842, 62.5613, 0)
+    exporting: RLine(RShape(address: "0x19cab470"), startPoint: RVector(24.0027, 62.9926, 0), endPoint: RVector(22.4842, 62.5613, 0))
+writeLine: N440 X22.484 Y62.561
+exportContourEntity: RLineEntity(0x19c50110)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(22.4842, 62.5613, 0)
+    endPoint: RVector(20.9973, 62.0582, 0)
+    exporting: RLine(RShape(address: "0x19c50160"), startPoint: RVector(22.4842, 62.5613, 0), endPoint: RVector(20.9973, 62.0582, 0))
+writeLine: N450 X20.997 Y62.058
+exportContourEntity: RLineEntity(0x19c615c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(20.9973, 62.0582, 0)
+    endPoint: RVector(19.5442, 61.4853, 0)
+    exporting: RLine(RShape(address: "0x19c61610"), startPoint: RVector(20.9973, 62.0582, 0), endPoint: RVector(19.5442, 61.4853, 0))
+writeLine: N460 X19.544 Y61.485
+exportContourEntity: RLineEntity(0x181cf040)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(19.5442, 61.4853, 0)
+    endPoint: RVector(18.1267, 60.8445, 0)
+    exporting: RLine(RShape(address: "0x181cf090"), startPoint: RVector(19.5442, 61.4853, 0), endPoint: RVector(18.1267, 60.8445, 0))
+writeLine: N470 X18.127 Y60.844
+exportContourEntity: RLineEntity(0x19cb3480)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(18.1267, 60.8445, 0)
+    endPoint: RVector(16.7469, 60.1378, 0)
+    exporting: RLine(RShape(address: "0x19cb34d0"), startPoint: RVector(18.1267, 60.8445, 0), endPoint: RVector(16.7469, 60.1378, 0))
+writeLine: N480 X16.747 Y60.138
+exportContourEntity: RLineEntity(0x19cb3bb0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(16.7469, 60.1378, 0)
+    endPoint: RVector(15.4068, 59.3673, 0)
+    exporting: RLine(RShape(address: "0x19cb3c00"), startPoint: RVector(16.7469, 60.1378, 0), endPoint: RVector(15.4068, 59.3673, 0))
+writeLine: N490 X15.407 Y59.367
+exportContourEntity: RLineEntity(0x19cb4180)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(15.4068, 59.3673, 0)
+    endPoint: RVector(14.1085, 58.5349, 0)
+    exporting: RLine(RShape(address: "0x19cb41d0"), startPoint: RVector(15.4068, 59.3673, 0), endPoint: RVector(14.1085, 58.5349, 0))
+writeLine: N500 X14.108 Y58.535
+exportContourEntity: RLineEntity(0x19cb4980)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(14.1085, 58.5349, 0)
+    endPoint: RVector(12.8539, 57.6427, 0)
+    exporting: RLine(RShape(address: "0x19cb49d0"), startPoint: RVector(14.1085, 58.5349, 0), endPoint: RVector(12.8539, 57.6427, 0))
+writeLine: N510 X12.854 Y57.643
+exportContourEntity: RLineEntity(0x19cb52e0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(12.8539, 57.6427, 0)
+    endPoint: RVector(11.645, 56.6928, 0)
+    exporting: RLine(RShape(address: "0x19cb5330"), startPoint: RVector(12.8539, 57.6427, 0), endPoint: RVector(11.645, 56.6928, 0))
+writeLine: N520 X11.645 Y56.693
+exportContourEntity: RLineEntity(0x19cb5b50)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(11.645, 56.6928, 0)
+    endPoint: RVector(10.4839, 55.687, 0)
+    exporting: RLine(RShape(address: "0x19cb5ba0"), startPoint: RVector(11.645, 56.6928, 0), endPoint: RVector(10.4839, 55.687, 0))
+writeLine: N530 X10.484 Y55.687
+exportContourEntity: RLineEntity(0x19cb6540)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(10.4839, 55.687, 0)
+    endPoint: RVector(9.37258, 54.6274, 0)
+    exporting: RLine(RShape(address: "0x19cb6590"), startPoint: RVector(10.4839, 55.687, 0), endPoint: RVector(9.37258, 54.6274, 0))
+writeLine: N540 X9.373 Y54.627
+exportContourEntity: RLineEntity(0x19cb6e60)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(9.37258, 54.6274, 0)
+    endPoint: RVector(8.31302, 53.5161, 0)
+    exporting: RLine(RShape(address: "0x19cb6eb0"), startPoint: RVector(9.37258, 54.6274, 0), endPoint: RVector(8.31302, 53.5161, 0))
+writeLine: N550 X8.313 Y53.516
+exportContourEntity: RLineEntity(0x19cb75a0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(8.31302, 53.5161, 0)
+    endPoint: RVector(7.30724, 52.355, 0)
+    exporting: RLine(RShape(address: "0x19cb75f0"), startPoint: RVector(8.31302, 53.5161, 0), endPoint: RVector(7.30724, 52.355, 0))
+writeLine: N560 X7.307 Y52.355
+exportContourEntity: RLineEntity(0x19cb7db0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(7.30724, 52.355, 0)
+    endPoint: RVector(6.35727, 51.1461, 0)
+    exporting: RLine(RShape(address: "0x19cb7e00"), startPoint: RVector(7.30724, 52.355, 0), endPoint: RVector(6.35727, 51.1461, 0))
+writeLine: N570 X6.357 Y51.146
+exportContourEntity: RLineEntity(0x19cb8470)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(6.35727, 51.1461, 0)
+    endPoint: RVector(5.4651, 49.8915, 0)
+    exporting: RLine(RShape(address: "0x19cb84c0"), startPoint: RVector(6.35727, 51.1461, 0), endPoint: RVector(5.4651, 49.8915, 0))
+writeLine: N580 X5.465 Y49.892
+exportContourEntity: RLineEntity(0x19cb8ae0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(5.4651, 49.8915, 0)
+    endPoint: RVector(4.63275, 48.5932, 0)
+    exporting: RLine(RShape(address: "0x19cb8b30"), startPoint: RVector(5.4651, 49.8915, 0), endPoint: RVector(4.63275, 48.5932, 0))
+writeLine: N590 X4.633 Y48.593
+exportContourEntity: RLineEntity(0x19cb8d90)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(4.63275, 48.5932, 0)
+    endPoint: RVector(3.86223, 47.2531, 0)
+    exporting: RLine(RShape(address: "0x19cb8de0"), startPoint: RVector(4.63275, 48.5932, 0), endPoint: RVector(3.86223, 47.2531, 0))
+writeLine: N600 X3.862 Y47.253
+exportContourEntity: RLineEntity(0x19cb9390)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(3.86223, 47.2531, 0)
+    endPoint: RVector(3.15555, 45.8733, 0)
+    exporting: RLine(RShape(address: "0x19cb93e0"), startPoint: RVector(3.86223, 47.2531, 0), endPoint: RVector(3.15555, 45.8733, 0))
+writeLine: N610 X3.156 Y45.873
+exportContourEntity: RLineEntity(0x19cb9f00)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(3.15555, 45.8733, 0)
+    endPoint: RVector(2.51472, 44.4558, 0)
+    exporting: RLine(RShape(address: "0x19cb9f50"), startPoint: RVector(3.15555, 45.8733, 0), endPoint: RVector(2.51472, 44.4558, 0))
+writeLine: N620 X2.515 Y44.456
+exportContourEntity: RLineEntity(0x19cba890)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(2.51472, 44.4558, 0)
+    endPoint: RVector(1.94175, 43.0027, 0)
+    exporting: RLine(RShape(address: "0x19cba8e0"), startPoint: RVector(2.51472, 44.4558, 0), endPoint: RVector(1.94175, 43.0027, 0))
+writeLine: N630 X1.942 Y43.003
+exportContourEntity: RLineEntity(0x19cbafe0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(1.94175, 43.0027, 0)
+    endPoint: RVector(1.43866, 41.5158, 0)
+    exporting: RLine(RShape(address: "0x19cbb030"), startPoint: RVector(1.94175, 43.0027, 0), endPoint: RVector(1.43866, 41.5158, 0))
+writeLine: N640 X1.439 Y41.516
+exportContourEntity: RLineEntity(0x19c737c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(1.43866, 41.5158, 0)
+    endPoint: RVector(1.00744, 39.9973, 0)
+    exporting: RLine(RShape(address: "0x19c73810"), startPoint: RVector(1.43866, 41.5158, 0), endPoint: RVector(1.00744, 39.9973, 0))
+writeLine: N650 X1.007 Y39.997
+exportContourEntity: RLineEntity(0x19cab260)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(1.00744, 39.9973, 0)
+    endPoint: RVector(0.650126, 38.4491, 0)
+    exporting: RLine(RShape(address: "0x19cab2b0"), startPoint: RVector(1.00744, 39.9973, 0), endPoint: RVector(0.650126, 38.4491, 0))
+writeLine: N660 X0.65 Y38.449
+exportContourEntity: RLineEntity(0x19cca990)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.650126, 38.4491, 0)
+    endPoint: RVector(0.368712, 36.8733, 0)
+    exporting: RLine(RShape(address: "0x19cca9e0"), startPoint: RVector(0.650126, 38.4491, 0), endPoint: RVector(0.368712, 36.8733, 0))
+writeLine: N670 X0.369 Y36.873
+exportContourEntity: RLineEntity(0x19cc7bc0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.368712, 36.8733, 0)
+    endPoint: RVector(0.165212, 35.2718, 0)
+    exporting: RLine(RShape(address: "0x19cc7c10"), startPoint: RVector(0.368712, 36.8733, 0), endPoint: RVector(0.165212, 35.2718, 0))
+writeLine: N680 X0.165 Y35.272
+exportContourEntity: RLineEntity(0x19cb0ad0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.165212, 35.2718, 0)
+    endPoint: RVector(0.0416382, 33.6467, 0)
+    exporting: RLine(RShape(address: "0x19cb0b20"), startPoint: RVector(0.165212, 35.2718, 0), endPoint: RVector(0.0416382, 33.6467, 0))
+writeLine: N690 X0.042 Y33.647
+exportContourEntity: RLineEntity(0x19ccc7f0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.0416382, 33.6467, 0)
+    endPoint: RVector(0, 32, 0)
+    exporting: RLine(RShape(address: "0x19ccc840"), startPoint: RVector(0.0416382, 33.6467, 0), endPoint: RVector(0, 32, 0))
+writeLine: N700 X0 Y32
+exportContourEntity: RSplineEntity(0x19caa520)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+exporting spline
+exportContourEntity: RLineEntity(0x19cad1c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0, 32, 0)
+    endPoint: RVector(0.0416382, 30.3533, 0)
+    exporting: RLine(RShape(address: "0x19cad210"), startPoint: RVector(0, 32, 0), endPoint: RVector(0.0416382, 30.3533, 0))
+writeLine: N710 X0.042 Y30.353
+exportContourEntity: RLineEntity(0x19cafe80)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.0416382, 30.3533, 0)
+    endPoint: RVector(0.165212, 28.7282, 0)
+    exporting: RLine(RShape(address: "0x19cafed0"), startPoint: RVector(0.0416382, 30.3533, 0), endPoint: RVector(0.165212, 28.7282, 0))
+writeLine: N720 X0.165 Y28.728
+exportContourEntity: RLineEntity(0x19ca6f30)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.165212, 28.7282, 0)
+    endPoint: RVector(0.368712, 27.1267, 0)
+    exporting: RLine(RShape(address: "0x19ca6f80"), startPoint: RVector(0.165212, 28.7282, 0), endPoint: RVector(0.368712, 27.1267, 0))
+writeLine: N730 X0.369 Y27.127
+exportContourEntity: RLineEntity(0x19ca6480)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.368712, 27.1267, 0)
+    endPoint: RVector(0.650126, 25.5509, 0)
+    exporting: RLine(RShape(address: "0x19ca64d0"), startPoint: RVector(0.368712, 27.1267, 0), endPoint: RVector(0.650126, 25.5509, 0))
+writeLine: N740 X0.65 Y25.551
+exportContourEntity: RLineEntity(0x19ca9290)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(0.650126, 25.5509, 0)
+    endPoint: RVector(1.00744, 24.0027, 0)
+    exporting: RLine(RShape(address: "0x19ca92e0"), startPoint: RVector(0.650126, 25.5509, 0), endPoint: RVector(1.00744, 24.0027, 0))
+writeLine: N750 X1.007 Y24.003
+exportContourEntity: RLineEntity(0x19cc8520)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(1.00744, 24.0027, 0)
+    endPoint: RVector(1.43866, 22.4842, 0)
+    exporting: RLine(RShape(address: "0x19cc8570"), startPoint: RVector(1.00744, 24.0027, 0), endPoint: RVector(1.43866, 22.4842, 0))
+writeLine: N760 X1.439 Y22.484
+exportContourEntity: RLineEntity(0x19cc8d30)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(1.43866, 22.4842, 0)
+    endPoint: RVector(1.94175, 20.9973, 0)
+    exporting: RLine(RShape(address: "0x19cc8d80"), startPoint: RVector(1.43866, 22.4842, 0), endPoint: RVector(1.94175, 20.9973, 0))
+writeLine: N770 X1.942 Y20.997
+exportContourEntity: RLineEntity(0x19cc9330)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(1.94175, 20.9973, 0)
+    endPoint: RVector(2.51472, 19.5442, 0)
+    exporting: RLine(RShape(address: "0x19cc9380"), startPoint: RVector(1.94175, 20.9973, 0), endPoint: RVector(2.51472, 19.5442, 0))
+writeLine: N780 X2.515 Y19.544
+exportContourEntity: RLineEntity(0x19cc9990)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(2.51472, 19.5442, 0)
+    endPoint: RVector(3.15555, 18.1267, 0)
+    exporting: RLine(RShape(address: "0x19cc99e0"), startPoint: RVector(2.51472, 19.5442, 0), endPoint: RVector(3.15555, 18.1267, 0))
+writeLine: N790 X3.156 Y18.127
+exportContourEntity: RLineEntity(0x19cca1d0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(3.15555, 18.1267, 0)
+    endPoint: RVector(3.86223, 16.7469, 0)
+    exporting: RLine(RShape(address: "0x19cca220"), startPoint: RVector(3.15555, 18.1267, 0), endPoint: RVector(3.86223, 16.7469, 0))
+writeLine: N800 X3.862 Y16.747
+exportContourEntity: RLineEntity(0x19cc7750)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(3.86223, 16.7469, 0)
+    endPoint: RVector(4.63275, 15.4068, 0)
+    exporting: RLine(RShape(address: "0x19cc77a0"), startPoint: RVector(3.86223, 16.7469, 0), endPoint: RVector(4.63275, 15.4068, 0))
+writeLine: N810 X4.633 Y15.407
+exportContourEntity: RLineEntity(0x19cc5320)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(4.63275, 15.4068, 0)
+    endPoint: RVector(5.4651, 14.1085, 0)
+    exporting: RLine(RShape(address: "0x19cc5370"), startPoint: RVector(4.63275, 15.4068, 0), endPoint: RVector(5.4651, 14.1085, 0))
+writeLine: N820 X5.465 Y14.108
+exportContourEntity: RLineEntity(0x19cc5e30)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(5.4651, 14.1085, 0)
+    endPoint: RVector(6.35727, 12.8539, 0)
+    exporting: RLine(RShape(address: "0x19cc5e80"), startPoint: RVector(5.4651, 14.1085, 0), endPoint: RVector(6.35727, 12.8539, 0))
+writeLine: N830 X6.357 Y12.854
+exportContourEntity: RLineEntity(0x19cce010)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(6.35727, 12.8539, 0)
+    endPoint: RVector(7.30724, 11.645, 0)
+    exporting: RLine(RShape(address: "0x19cce060"), startPoint: RVector(6.35727, 12.8539, 0), endPoint: RVector(7.30724, 11.645, 0))
+writeLine: N840 X7.307 Y11.645
+exportContourEntity: RLineEntity(0x19cce550)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(7.30724, 11.645, 0)
+    endPoint: RVector(8.31302, 10.4839, 0)
+    exporting: RLine(RShape(address: "0x19cce5a0"), startPoint: RVector(7.30724, 11.645, 0), endPoint: RVector(8.31302, 10.4839, 0))
+writeLine: N850 X8.313 Y10.484
+exportContourEntity: RLineEntity(0x19ccf0c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(8.31302, 10.4839, 0)
+    endPoint: RVector(9.37258, 9.37258, 0)
+    exporting: RLine(RShape(address: "0x19ccf110"), startPoint: RVector(8.31302, 10.4839, 0), endPoint: RVector(9.37258, 9.37258, 0))
+writeLine: N860 X9.373 Y9.373
+exportContourEntity: RLineEntity(0x19ccfc30)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(9.37258, 9.37258, 0)
+    endPoint: RVector(10.4839, 8.31302, 0)
+    exporting: RLine(RShape(address: "0x19ccfc80"), startPoint: RVector(9.37258, 9.37258, 0), endPoint: RVector(10.4839, 8.31302, 0))
+writeLine: N870 X10.484 Y8.313
+exportContourEntity: RLineEntity(0x19cd07a0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(10.4839, 8.31302, 0)
+    endPoint: RVector(11.645, 7.30724, 0)
+    exporting: RLine(RShape(address: "0x19cd07f0"), startPoint: RVector(10.4839, 8.31302, 0), endPoint: RVector(11.645, 7.30724, 0))
+writeLine: N880 X11.645 Y7.307
+exportContourEntity: RLineEntity(0x19cd1370)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(11.645, 7.30724, 0)
+    endPoint: RVector(12.8539, 6.35727, 0)
+    exporting: RLine(RShape(address: "0x19cd13c0"), startPoint: RVector(11.645, 7.30724, 0), endPoint: RVector(12.8539, 6.35727, 0))
+writeLine: N890 X12.854 Y6.357
+exportContourEntity: RLineEntity(0x19cd1e80)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(12.8539, 6.35727, 0)
+    endPoint: RVector(14.1085, 5.4651, 0)
+    exporting: RLine(RShape(address: "0x19cd1ed0"), startPoint: RVector(12.8539, 6.35727, 0), endPoint: RVector(14.1085, 5.4651, 0))
+writeLine: N900 X14.108 Y5.465
+exportContourEntity: RLineEntity(0x19cd29f0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(14.1085, 5.4651, 0)
+    endPoint: RVector(15.4068, 4.63275, 0)
+    exporting: RLine(RShape(address: "0x19cd2a40"), startPoint: RVector(14.1085, 5.4651, 0), endPoint: RVector(15.4068, 4.63275, 0))
+writeLine: N910 X15.407 Y4.633
+exportContourEntity: RLineEntity(0x19cd3560)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(15.4068, 4.63275, 0)
+    endPoint: RVector(16.7469, 3.86223, 0)
+    exporting: RLine(RShape(address: "0x19cd35b0"), startPoint: RVector(15.4068, 4.63275, 0), endPoint: RVector(16.7469, 3.86223, 0))
+writeLine: N920 X16.747 Y3.862
+exportContourEntity: RLineEntity(0x19cd40d0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(16.7469, 3.86223, 0)
+    endPoint: RVector(18.1267, 3.15555, 0)
+    exporting: RLine(RShape(address: "0x19cd4120"), startPoint: RVector(16.7469, 3.86223, 0), endPoint: RVector(18.1267, 3.15555, 0))
+writeLine: N930 X18.127 Y3.156
+exportContourEntity: RLineEntity(0x19cd4c40)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(18.1267, 3.15555, 0)
+    endPoint: RVector(19.5442, 2.51472, 0)
+    exporting: RLine(RShape(address: "0x19cd4c90"), startPoint: RVector(18.1267, 3.15555, 0), endPoint: RVector(19.5442, 2.51472, 0))
+writeLine: N940 X19.544 Y2.515
+exportContourEntity: RLineEntity(0x19cd57b0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(19.5442, 2.51472, 0)
+    endPoint: RVector(20.9973, 1.94175, 0)
+    exporting: RLine(RShape(address: "0x19cd5800"), startPoint: RVector(19.5442, 2.51472, 0), endPoint: RVector(20.9973, 1.94175, 0))
+writeLine: N950 X20.997 Y1.942
+exportContourEntity: RLineEntity(0x19cd6320)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(20.9973, 1.94175, 0)
+    endPoint: RVector(22.4842, 1.43866, 0)
+    exporting: RLine(RShape(address: "0x19cd6370"), startPoint: RVector(20.9973, 1.94175, 0), endPoint: RVector(22.4842, 1.43866, 0))
+writeLine: N960 X22.484 Y1.439
+exportContourEntity: RLineEntity(0x19cd6e90)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(22.4842, 1.43866, 0)
+    endPoint: RVector(24.0027, 1.00744, 0)
+    exporting: RLine(RShape(address: "0x19cd6ee0"), startPoint: RVector(22.4842, 1.43866, 0), endPoint: RVector(24.0027, 1.00744, 0))
+writeLine: N970 X24.003 Y1.007
+exportContourEntity: RLineEntity(0x19cd7a00)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(24.0027, 1.00744, 0)
+    endPoint: RVector(25.5509, 0.650126, 0)
+    exporting: RLine(RShape(address: "0x19cd7a50"), startPoint: RVector(24.0027, 1.00744, 0), endPoint: RVector(25.5509, 0.650126, 0))
+writeLine: N980 X25.551 Y0.65
+exportContourEntity: RLineEntity(0x19cd8570)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(25.5509, 0.650126, 0)
+    endPoint: RVector(27.1267, 0.368712, 0)
+    exporting: RLine(RShape(address: "0x19cd85c0"), startPoint: RVector(25.5509, 0.650126, 0), endPoint: RVector(27.1267, 0.368712, 0))
+writeLine: N990 X27.127 Y0.369
+exportContourEntity: RLineEntity(0x19cd90e0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(27.1267, 0.368712, 0)
+    endPoint: RVector(28.7282, 0.165212, 0)
+    exporting: RLine(RShape(address: "0x19cd9130"), startPoint: RVector(27.1267, 0.368712, 0), endPoint: RVector(28.7282, 0.165212, 0))
+writeLine: N1000 X28.728 Y0.165
+exportContourEntity: RLineEntity(0x19cd9c50)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(28.7282, 0.165212, 0)
+    endPoint: RVector(30.3533, 0.0416382, 0)
+    exporting: RLine(RShape(address: "0x19cd9ca0"), startPoint: RVector(28.7282, 0.165212, 0), endPoint: RVector(30.3533, 0.0416382, 0))
+writeLine: N1010 X30.353 Y0.042
+exportContourEntity: RLineEntity(0x19cda7c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(30.3533, 0.0416382, 0)
+    endPoint: RVector(32, 0, 0)
+    exporting: RLine(RShape(address: "0x19cda810"), startPoint: RVector(30.3533, 0.0416382, 0), endPoint: RVector(32, 0, 0))
+writeLine: N1020 X32 Y0
+exportContourEntity: RSplineEntity(0x19cdb3c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+exporting spline
+exportContourEntity: RLineEntity(0x19cdc620)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(32, 0, 0)
+    endPoint: RVector(33.6467, 0.0416382, 0)
+    exporting: RLine(RShape(address: "0x19cdc670"), startPoint: RVector(32, 0, 0), endPoint: RVector(33.6467, 0.0416382, 0))
+writeLine: N1030 X33.647 Y0.042
+exportContourEntity: RLineEntity(0x19cddb00)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(33.6467, 0.0416382, 0)
+    endPoint: RVector(35.2718, 0.165212, 0)
+    exporting: RLine(RShape(address: "0x19cddb50"), startPoint: RVector(33.6467, 0.0416382, 0), endPoint: RVector(35.2718, 0.165212, 0))
+writeLine: N1040 X35.272 Y0.165
+exportContourEntity: RLineEntity(0x19cde670)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(35.2718, 0.165212, 0)
+    endPoint: RVector(36.8733, 0.368712, 0)
+    exporting: RLine(RShape(address: "0x19cde6c0"), startPoint: RVector(35.2718, 0.165212, 0), endPoint: RVector(36.8733, 0.368712, 0))
+writeLine: N1050 X36.873 Y0.369
+exportContourEntity: RLineEntity(0x19cdf450)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(36.8733, 0.368712, 0)
+    endPoint: RVector(38.4491, 0.650126, 0)
+    exporting: RLine(RShape(address: "0x19cdf4a0"), startPoint: RVector(36.8733, 0.368712, 0), endPoint: RVector(38.4491, 0.650126, 0))
+writeLine: N1060 X38.449 Y0.65
+exportContourEntity: RLineEntity(0x19cdfb00)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(38.4491, 0.650126, 0)
+    endPoint: RVector(39.9973, 1.00744, 0)
+    exporting: RLine(RShape(address: "0x19cdfb50"), startPoint: RVector(38.4491, 0.650126, 0), endPoint: RVector(39.9973, 1.00744, 0))
+writeLine: N1070 X39.997 Y1.007
+exportContourEntity: RLineEntity(0x19ce0420)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(39.9973, 1.00744, 0)
+    endPoint: RVector(41.5158, 1.43866, 0)
+    exporting: RLine(RShape(address: "0x19ce0470"), startPoint: RVector(39.9973, 1.00744, 0), endPoint: RVector(41.5158, 1.43866, 0))
+writeLine: N1080 X41.516 Y1.439
+exportContourEntity: RLineEntity(0x19ce06c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(41.5158, 1.43866, 0)
+    endPoint: RVector(43.0027, 1.94175, 0)
+    exporting: RLine(RShape(address: "0x19ce0710"), startPoint: RVector(41.5158, 1.43866, 0), endPoint: RVector(43.0027, 1.94175, 0))
+writeLine: N1090 X43.003 Y1.942
+exportContourEntity: RLineEntity(0x50d1a70)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(43.0027, 1.94175, 0)
+    endPoint: RVector(44.4558, 2.51472, 0)
+    exporting: RLine(RShape(address: "0x50d1ac0"), startPoint: RVector(43.0027, 1.94175, 0), endPoint: RVector(44.4558, 2.51472, 0))
+writeLine: N1100 X44.456 Y2.515
+exportContourEntity: RLineEntity(0x19c4d6a0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(44.4558, 2.51472, 0)
+    endPoint: RVector(45.8733, 3.15555, 0)
+    exporting: RLine(RShape(address: "0x19c4d6f0"), startPoint: RVector(44.4558, 2.51472, 0), endPoint: RVector(45.8733, 3.15555, 0))
+writeLine: N1110 X45.873 Y3.156
+exportContourEntity: RLineEntity(0x16869770)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(45.8733, 3.15555, 0)
+    endPoint: RVector(47.2531, 3.86223, 0)
+    exporting: RLine(RShape(address: "0x168697c0"), startPoint: RVector(45.8733, 3.15555, 0), endPoint: RVector(47.2531, 3.86223, 0))
+writeLine: N1120 X47.253 Y3.862
+exportContourEntity: RLineEntity(0x19c41c00)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(47.2531, 3.86223, 0)
+    endPoint: RVector(48.5932, 4.63275, 0)
+    exporting: RLine(RShape(address: "0x19c41c50"), startPoint: RVector(47.2531, 3.86223, 0), endPoint: RVector(48.5932, 4.63275, 0))
+writeLine: N1130 X48.593 Y4.633
+exportContourEntity: RLineEntity(0x19c43320)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(48.5932, 4.63275, 0)
+    endPoint: RVector(49.8915, 5.4651, 0)
+    exporting: RLine(RShape(address: "0x19c43370"), startPoint: RVector(48.5932, 4.63275, 0), endPoint: RVector(49.8915, 5.4651, 0))
+writeLine: N1140 X49.892 Y5.465
+exportContourEntity: RLineEntity(0x19ce0900)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(49.8915, 5.4651, 0)
+    endPoint: RVector(51.1461, 6.35727, 0)
+    exporting: RLine(RShape(address: "0x19ce0950"), startPoint: RVector(49.8915, 5.4651, 0), endPoint: RVector(51.1461, 6.35727, 0))
+writeLine: N1150 X51.146 Y6.357
+exportContourEntity: RLineEntity(0x50cae80)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(51.1461, 6.35727, 0)
+    endPoint: RVector(52.355, 7.30724, 0)
+    exporting: RLine(RShape(address: "0x50caed0"), startPoint: RVector(51.1461, 6.35727, 0), endPoint: RVector(52.355, 7.30724, 0))
+writeLine: N1160 X52.355 Y7.307
+exportContourEntity: RLineEntity(0x19c3e230)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(52.355, 7.30724, 0)
+    endPoint: RVector(53.5161, 8.31302, 0)
+    exporting: RLine(RShape(address: "0x19c3e280"), startPoint: RVector(52.355, 7.30724, 0), endPoint: RVector(53.5161, 8.31302, 0))
+writeLine: N1170 X53.516 Y8.313
+exportContourEntity: RLineEntity(0x19ce0b50)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(53.5161, 8.31302, 0)
+    endPoint: RVector(54.6274, 9.37258, 0)
+    exporting: RLine(RShape(address: "0x19ce0ba0"), startPoint: RVector(53.5161, 8.31302, 0), endPoint: RVector(54.6274, 9.37258, 0))
+writeLine: N1180 X54.627 Y9.373
+exportContourEntity: RLineEntity(0x19ce0fd0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(54.6274, 9.37258, 0)
+    endPoint: RVector(55.687, 10.4839, 0)
+    exporting: RLine(RShape(address: "0x19ce1020"), startPoint: RVector(54.6274, 9.37258, 0), endPoint: RVector(55.687, 10.4839, 0))
+writeLine: N1190 X55.687 Y10.484
+exportContourEntity: RLineEntity(0x19ce1450)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(55.687, 10.4839, 0)
+    endPoint: RVector(56.6928, 11.645, 0)
+    exporting: RLine(RShape(address: "0x19ce14a0"), startPoint: RVector(55.687, 10.4839, 0), endPoint: RVector(56.6928, 11.645, 0))
+writeLine: N1200 X56.693 Y11.645
+exportContourEntity: RLineEntity(0x19ce18d0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(56.6928, 11.645, 0)
+    endPoint: RVector(57.6427, 12.8539, 0)
+    exporting: RLine(RShape(address: "0x19ce1920"), startPoint: RVector(56.6928, 11.645, 0), endPoint: RVector(57.6427, 12.8539, 0))
+writeLine: N1210 X57.643 Y12.854
+exportContourEntity: RLineEntity(0x19ce1cc0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(57.6427, 12.8539, 0)
+    endPoint: RVector(58.5349, 14.1085, 0)
+    exporting: RLine(RShape(address: "0x19ce1d10"), startPoint: RVector(57.6427, 12.8539, 0), endPoint: RVector(58.5349, 14.1085, 0))
+writeLine: N1220 X58.535 Y14.108
+exportContourEntity: RLineEntity(0x19ce21c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(58.5349, 14.1085, 0)
+    endPoint: RVector(59.3673, 15.4068, 0)
+    exporting: RLine(RShape(address: "0x19ce2210"), startPoint: RVector(58.5349, 14.1085, 0), endPoint: RVector(59.3673, 15.4068, 0))
+writeLine: N1230 X59.367 Y15.407
+exportContourEntity: RLineEntity(0x19ce2ad0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(59.3673, 15.4068, 0)
+    endPoint: RVector(60.1378, 16.7469, 0)
+    exporting: RLine(RShape(address: "0x19ce2b20"), startPoint: RVector(59.3673, 15.4068, 0), endPoint: RVector(60.1378, 16.7469, 0))
+writeLine: N1240 X60.138 Y16.747
+exportContourEntity: RLineEntity(0x19ce30c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(60.1378, 16.7469, 0)
+    endPoint: RVector(60.8445, 18.1267, 0)
+    exporting: RLine(RShape(address: "0x19ce3110"), startPoint: RVector(60.1378, 16.7469, 0), endPoint: RVector(60.8445, 18.1267, 0))
+writeLine: N1250 X60.844 Y18.127
+exportContourEntity: RLineEntity(0x19ce3580)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(60.8445, 18.1267, 0)
+    endPoint: RVector(61.4853, 19.5442, 0)
+    exporting: RLine(RShape(address: "0x19ce35d0"), startPoint: RVector(60.8445, 18.1267, 0), endPoint: RVector(61.4853, 19.5442, 0))
+writeLine: N1260 X61.485 Y19.544
+exportContourEntity: RLineEntity(0x50265c0)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(61.4853, 19.5442, 0)
+    endPoint: RVector(62.0582, 20.9973, 0)
+    exporting: RLine(RShape(address: "0x5026610"), startPoint: RVector(61.4853, 19.5442, 0), endPoint: RVector(62.0582, 20.9973, 0))
+writeLine: N1270 X62.058 Y20.997
+exportContourEntity: RLineEntity(0x168d6560)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(62.0582, 20.9973, 0)
+    endPoint: RVector(62.5613, 22.4842, 0)
+    exporting: RLine(RShape(address: "0x168d65b0"), startPoint: RVector(62.0582, 20.9973, 0), endPoint: RVector(62.5613, 22.4842, 0))
+writeLine: N1280 X62.561 Y22.484
+exportContourEntity: RLineEntity(0x50cad40)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(62.5613, 22.4842, 0)
+    endPoint: RVector(62.9926, 24.0027, 0)
+    exporting: RLine(RShape(address: "0x50cad90"), startPoint: RVector(62.5613, 22.4842, 0), endPoint: RVector(62.9926, 24.0027, 0))
+writeLine: N1290 X62.993 Y24.003
+exportContourEntity: RLineEntity(0x19c3ba90)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(62.9926, 24.0027, 0)
+    endPoint: RVector(63.3499, 25.5509, 0)
+    exporting: RLine(RShape(address: "0x19c3bae0"), startPoint: RVector(62.9926, 24.0027, 0), endPoint: RVector(63.3499, 25.5509, 0))
+writeLine: N1300 X63.35 Y25.551
+exportContourEntity: RLineEntity(0x19c53f20)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.3499, 25.5509, 0)
+    endPoint: RVector(63.6313, 27.1267, 0)
+    exporting: RLine(RShape(address: "0x19c53f70"), startPoint: RVector(63.3499, 25.5509, 0), endPoint: RVector(63.6313, 27.1267, 0))
+writeLine: N1310 X63.631 Y27.127
+exportContourEntity: RLineEntity(0x502da20)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.6313, 27.1267, 0)
+    endPoint: RVector(63.8348, 28.7282, 0)
+    exporting: RLine(RShape(address: "0x502da70"), startPoint: RVector(63.6313, 27.1267, 0), endPoint: RVector(63.8348, 28.7282, 0))
+writeLine: N1320 X63.835 Y28.728
+exportContourEntity: RLineEntity(0x181e2710)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.8348, 28.7282, 0)
+    endPoint: RVector(63.9584, 30.3533, 0)
+    exporting: RLine(RShape(address: "0x181e2760"), startPoint: RVector(63.8348, 28.7282, 0), endPoint: RVector(63.9584, 30.3533, 0))
+writeLine: N1330 X63.958 Y30.353
+exportContourEntity: RLineEntity(0x19c44f30)
+  rampOnPoint: undefined
+  rampOffPoint: undefined
+  line, arc or circle
+    startPoint: RVector(63.9584, 30.3533, 0)
+    endPoint: RVector(64, 32, 0)
+    exporting: RLine(RShape(address: "0x19c44f80"), startPoint: RVector(63.9584, 30.3533, 0), endPoint: RVector(64, 32, 0))
+writeLine: N1340 X64 Y32
+Finished processing paths.
+writeLine: N1350 G00 Z2
+writeLine: N1360 Z100
+writeLine: N1370 M30
+Export finished
