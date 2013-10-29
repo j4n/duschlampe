@@ -7,14 +7,30 @@ G00 Z1.0000
 G00 X0 Y0
 (turn spindle clockwise)
 M03 S1
+
 (rapid motion)
-G00 X-6.1705 Y7.2684 
+G00 X16 Y16
 (coordinated motion)
 (G01 Z0.0000 F250.00)
+
+(SETUP: place bit on surface)
+
+
+(go down half a millimeter)
+G00 X0Y0Z0.05
+
+
 (arc mode)
 G02
+
 (arc starts at X0Y2 and finishes at X2Y0. It's center is at X0Y0)
-X2Y0 I0J-2.0 
+(X2Y0 I0J-2.0)
+
+
+(arcs inside arch, always 1/4" smaller because our bit is 1/4")
+
+
+
 (rapid motion)
 G00 Z01.0000 
 (end program at start location)
