@@ -1,0 +1,25 @@
+(units milimeters)
+G21 
+(absolute distance mode)
+G90
+(rapid motion)
+G00 Z1.0000 
+G00 X0 Y0
+(turn spindle clockwise)
+M03 S1
+(rapid motion)
+G00 X-6.1705 Y7.2684 
+(coordinated motion)
+(G01 Z0.0000 F250.00)
+(arc mode)
+G02
+(arc starts at X0Y2 and finishes at X2Y0. It's center is at X0Y0)
+X2Y0 I0J-2.0 
+(rapid motion)
+G00 Z01.0000 
+(end program at start location)
+G00 X0Y0
+(stop spindle)
+M05
+(end program)
+M02 
