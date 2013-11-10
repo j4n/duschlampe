@@ -1,0 +1,4 @@
+original circuit:
+	green (cold)	53 mA
+	blue (medium)	mA
+	red (warm)	mA
