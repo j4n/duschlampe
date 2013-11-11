@@ -7,9 +7,9 @@ const int tempIn = 3;
 int tilt;
 
 // Output
-const int redPin = 1;   // Red LED,   connected to digital pin 9
-const int grnPin = 0;  // Green LED, connected to digital pin 10
-const int bluPin = 4;  // Blue LED,  connected to digital pin 11
+const int redPin = 1;
+const int grnPin = 0;
+const int bluPin = 4;
 
 // Color arrays
 int black[3]  = { 
@@ -81,7 +81,6 @@ ISR(TIMER1_COMPA_vect) {
     OCR1C = interval;
     isOn = true;
   }
-
 }
 
 // Main program: list the order of crossfades

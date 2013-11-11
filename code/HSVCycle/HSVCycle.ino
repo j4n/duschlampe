@@ -14,20 +14,19 @@ LED is RGB common cathode (SparkFun sku: COM-09264 or equivalent)
 
 const int ledPins[3] = { 1, 0, 4 };
 
+const int tiltIn = 1;
+const int tempIn = 3;
+int tilt;
+
+boolean isOff = true;
+int interval = 255;
+
 long rgb[3];
 long rgbval, k;
-float hsv[3] = {
-  0.0, 0.5, 0.5
-};
-float hsv_min[3] = {
-  0.0, 0.0, 0.4 // keep V term greater than 0 for smoothness
-};
-float hsv_max[3] = {
-  6.0, 1.0, 1.0
-};
-float hsv_delta[3] = {
-  0.0005, 0.00013, 0.00011
-};
+float hsv[3] = { 0.0, 0.5, 0.5 };
+float hsv_min[3] = { 0.0, 0.0, 0.4 }; // keep V term greater than 0 for smoothness
+float hsv_max[3] = { 6.0, 1.0, 1.0 };
+float hsv_delta[3] = { 0.0005, 0.00013, 0.00011 };
 
 /*
 chosen LED SparkFun sku: COM-09264
@@ -37,12 +36,14 @@ chosen LED SparkFun sku: COM-09264
  G  1200/6500  =  0.184615384615385   =    47/256
  B  1200/1200  =  1.0                 =   256/256
  */
-long bright[3] = {
-  109, 47, 256
-};
+//long bright[3] = { 109, 47, 256 };
+long bright[3] = { 128, 128, 128 };
 
 void setup () {
   PWM4_init();
+  if (STROBE) {
+    strobeTimerInit();
+  }
 
   randomSeed(analogRead(4));
   for (k=0; k<3; k++) {
@@ -56,10 +57,35 @@ void setup () {
   }
 }
 
+// timer for strobe
+ISR(TIMER1_COMPA_vect) {
+  //PINB |= 1<<PB1;
+  //DDRB ^= (1<<PB1);
+  if (isOff) {
+    for (k=0; k<3; k++) { // for all three RGB values
+      analogWriteWrap(ledPins[k], rgb[k] * bright[k]/256);
+    }
+
+    OCR1C = 4;
+    isOff = false;
+  } else {
+    for (k=0; k<3; k++) { 
+      digitalWrite(ledPins[k],LOW);
+    }
+    
+    OCR1C = interval;
+    isOff = true;
+  }
+}
+
 //void loop() {
 //  analogWriteWrap(1, 128);
 //}
 void loop() {
+  tilt = analogRead(tiltIn);   //take tilt
+  //interval = map(tilt, 298, 331, 0, 255);
+  interval = map(tilt, 141, 341, 0, 255);
+
   for (k=0; k<3; k++) { // for all three HSV values
     hsv[k] += hsv_delta[k];
     if (k<1) { // hue sweeps simply upwards
@@ -81,8 +107,10 @@ void loop() {
   rgb[1] = (rgbval & 0x0000FF00) >> 8;
   rgb[2] = rgbval & 0x000000FF;
 
-  for (k=0; k<3; k++) { // for all three RGB values
-    analogWriteWrap(ledPins[k], rgb[k] * bright[k]/256);
+  if (!STROBE) {
+    for (k=0; k<3; k++) { // for all three RGB values
+      analogWriteWrap(ledPins[k], rgb[k] * bright[k]/256);
+    }
   }
   delay(DELAY);
 }
@@ -148,4 +176,14 @@ void PWM4_init() {
 // Function to allow analogWrite on Trinket GPIO #4 
 void analogWrite4(uint8_t duty_value) {  
   OCR1B = duty_value;  // duty may be 0 to 255 (0 to 100%)
+}
+
+void strobeTimerInit() {
+  TCCR1 |= (1<<CTC1);
+  TIMSK |= 1<<OCIE1A;  
+
+  //TCCR1 |= (1<<CS13) | (1<<CS12) | (1<<CS11) |(1<<CS10);  
+  //TCCR1 |= (1<<CS12) | (1<<CS11) |(1<<CS10);  
+  TCCR1 |= (1<<CS13) | (1<<CS12) |(1<<CS11);  
+  sei();
 }
