@@ -56,8 +56,8 @@ void setup() {
   pinMode(tempIn, INPUT);
 //  digitalWrite(yIn, HIGH);
   pinMode(redPin, OUTPUT);
-  pinMode(greenPin, OUTPUT);
-  pinMode(bluePin, OUTPUT);
+  pinMode(grnPin, OUTPUT);
+  pinMode(bluPin, OUTPUT);
 
   initialTilt = analogRead(tiltIn);   //take tilt
 
