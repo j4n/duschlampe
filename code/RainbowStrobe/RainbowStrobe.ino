@@ -26,13 +26,13 @@ ISR(TIMER1_COMPA_vect) {
   //DDRB ^= (1<<PB1);
   if (isOn){
   analogWrite(redPin, intensity);
-  OCR1A=40;
+  OCR1C=40;
   isOn = false;
   }
   else{
     
     digitalWrite(redPin,LOW);
-    OCR1A=interval;
+    OCR1C=interval;
     isOn=true;
   }
 
@@ -42,10 +42,11 @@ void loop() {
   //analogWrite(redPin,intensity);
 
   intensity ++;
+  interval ++;
   delay(20);
-   tilt = analogRead(tiltIn);   //take tilt
+ //  tilt = analogRead(tiltIn);   //take tilt
     //interval = map(tilt, 298, 331, 0, 255);
-    interval = map(tilt, 141, 341, 0, 255);
+   // interval = map(tilt, 141, 341, 0, 255);
 
 
   //delay(2000);
