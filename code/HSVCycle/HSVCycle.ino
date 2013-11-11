@@ -9,7 +9,8 @@ LED is RGB common cathode (SparkFun sku: COM-09264 or equivalent)
     * GND → LED common cathode.
 */
 
-#define DELAY              2
+#define DELAY  1
+#define STROBE 1
 
 const int ledPins[3] = { 1, 0, 4 };
 
@@ -41,11 +42,13 @@ long bright[3] = {
 };
 
 void setup () {
+  PWM4_init();
+
   randomSeed(analogRead(4));
   for (k=0; k<3; k++) {
     pinMode(ledPins[k], OUTPUT);
     rgb[k]=0; // start with the LED off
-    analogWrite(ledPins[k], rgb[k] * bright[k]/256);
+    analogWriteWrap(ledPins[k], rgb[k] * bright[k]/256);
     if (k>1 && random(100) > 50) {
       // randomly twiddle direction of saturation and value increment on startup
       hsv_delta[k] *= -1.0;
@@ -53,6 +56,9 @@ void setup () {
   }
 }
 
+//void loop() {
+//  analogWriteWrap(1, 128);
+//}
 void loop() {
   for (k=0; k<3; k++) { // for all three HSV values
     hsv[k] += hsv_delta[k];
@@ -76,7 +82,7 @@ void loop() {
   rgb[2] = rgbval & 0x000000FF;
 
   for (k=0; k<3; k++) { // for all three RGB values
-    analogWrite(ledPins[k], rgb[k] * bright[k]/256);
+    analogWriteWrap(ledPins[k], rgb[k] * bright[k]/256);
   }
   delay(DELAY);
 }
@@ -122,3 +128,24 @@ long HSV_to_RGB( float h, float s, float v ) {
     return long(v * 255 ) * 65536 + long( m * 255 ) * 256 + long( n * 255);
   }
 } 
+
+void analogWriteWrap(uint8_t pin, uint8_t duty) {
+  if (pin == 4) {
+    analogWrite4(duty);
+  } else {
+    analogWrite(pin, duty);
+  }
+}
+
+void PWM4_init() {
+  // Set up PWM on Trinket GPIO #4 (PB4, pin 3) using Timer 1
+  TCCR1 = _BV (CS10);           // no prescaler
+  GTCCR = _BV (COM1B1) | _BV (PWM1B);  //  clear OC1B on compare
+  OCR1B = 127;                  // duty cycle initialize to 50%
+  OCR1C = 255;                  // frequency
+}
+ 
+// Function to allow analogWrite on Trinket GPIO #4 
+void analogWrite4(uint8_t duty_value) {  
+  OCR1B = duty_value;  // duty may be 0 to 255 (0 to 100%)
+}
