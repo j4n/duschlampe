@@ -3,7 +3,7 @@
  Analog input, serial output
  
  Reads an analog input pin, uses this value as a time delay for a stroboscope.
- Adapted from a sketch by by Steve Krave
+ Adapted from a sketch by by Steve Krave http://mehax.blogspot.ca/2011/02/arduino-stroboscope.html
  
  The circuit:
  * potentiometer/accelerometer connected to analog pin 0.
@@ -11,6 +11,8 @@
    side pins of the potentiometer go to +5V and ground
  * LEDs connected from digital pins 1,2,3 of Trinket
  
+
+
  */
 
 /*
@@ -23,11 +25,21 @@
  */
 
 //sets constants
+
+// trinket
 const int greenPin = 0;
 const int redPin = 1;
 const int tiltIn = 1;
 const int tempIn = 3;
 const int bluePin = 4;
+
+// failduino
+//const int greenPin = 0;
+//const int redPin = 13;
+//const int tiltIn = 5;
+//const int tempIn = 4;
+//const int bluePin = 4;
+
 
 // Variables etc...
 float tilt = 1;
@@ -51,6 +63,8 @@ void setup() {
   pinMode(bluePin, OUTPUT);
 
   initialTilt = analogRead(tiltIn);   //take tilt
+
+//  Serial.begin(9600); 
 }
 
 
@@ -65,20 +79,29 @@ void loop() {
   // so half way down from the middle = 254
   // then +/- 15 degrees is 237-271 = 34 clicks
   // 1024/34
-  //
   
- 
-  //tilt = analogRead(tiltIn);   //take tilt
+
+  // measured values from the accelerometer
+  // middle is 315
+  // 180 degrees mapped onto 200 clicks (141-341)
+  // 1 degree is 1.11111
+  // 315 +- (200/180*15)
   
-  // do calculation and scale up to 1024 again so the existing code works for now
   tilt = analogRead(tiltIn);   //take tilt
-  tilt = (tilt - initialTilt) * 34 + 512 // FIXME
-  tilt -= 237; // substract lower limit
-  hold = tilt*55 + 400;             //add some time to scale and for code execution
+  frequency = map(tilt, 298.0, 331.0, 20.0, 30.0);
+  
+//  // do calculation and scale up to 1024 again so the existing code works for now
+//  tilt = analogRead(tiltIn);   //take tilt
+//  tilt = (tilt - initialTilt) * 34 + 512 // FIXME
+//  tilt -= 237; // substract lower limit
+
+  //hold = tilt*55 + 400; //add some time to scale and for code execution
+  hold = map(frequency, 20.0, 30.0, 50000.0, 33333.0); //add some time to scale and for code execution
+//  hold = 40000;
 
   microsCurrent = micros();                // collect current time
   if (microsCurrent > microsPrev + hold){  //set up timing loop
-    frequency = 1000000/(microsCurrent - microsPrev);    
+//    frequency = 1000000/(microsCurrent - microsPrev);    
     microsPrev = microsPrev + hold;            //set up millis for delay stuff
 
     // set LEDs high
@@ -88,4 +111,9 @@ void loop() {
     //set all LEDs low
     digitalWrite(redPin,LOW);
   }
+
+//  Serial.print("sensor = " );                       
+//  Serial.print(tiltIn);      
+//  Serial.print("\t frequency = ");      
+//  Serial.println(frequency);   
 }
