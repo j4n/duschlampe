@@ -1,6 +1,10 @@
 /*
  vim:ft=c:expandtab:nocindent:ts=2
  */
+// Input
+const int tiltIn = 1;
+const int tempIn = 3;
+int tilt;
 
 const int redPin = 1;
 byte intensity = 0;
@@ -39,6 +43,9 @@ void loop() {
 
   intensity ++;
   delay(20);
+   tilt = analogRead(tiltIn);   //take tilt
+    //interval = map(tilt, 298, 331, 0, 255);
+    interval = map(tilt, 141, 341, 0, 255);
 
 
   //delay(2000);

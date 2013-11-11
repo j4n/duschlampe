@@ -36,7 +36,7 @@ int bluVal = black[2];
 int wait = 10;      // 10ms internal crossFade delay; increase for slower fades
 int hold = 0;       // Optional hold when a color is complete, before the next crossFade
 int loopCount = 60; // How often should DEBUG report?
-int repeat = 3;     // How many times should we loop before stopping? (0 for no stop)
+int repeat = 0;     // How many times should we loop before stopping? (0 for no stop)
 int j = 0;          // Loop counter for repeat
 
 // Initialize color variables
@@ -59,7 +59,7 @@ void setup()
 
   //TCCR1 |= (1<<CS13) | (1<<CS12) | (1<<CS11) |(1<<CS10);  
   //TCCR1 |= (1<<CS12) | (1<<CS11) |(1<<CS10);  
-  TCCR1 |= (1<<CS13) | (1<<CS11) |(1<<CS10);  
+  TCCR1 |= (1<<CS13) | (1<<CS12) |(1<<CS11);  
   sei();
 
 }
@@ -71,13 +71,14 @@ ISR(TIMER1_COMPA_vect) {
     analogWrite(redPin, redVal);
     analogWrite(grnPin, grnVal);
     analogWrite(bluPin, bluVal);
-    OCR1A = 15;
+    OCR1C = 4;
     isOn = false;
-  } else {
+  } 
+  else {
     digitalWrite(redPin,LOW);
     digitalWrite(grnPin,LOW);
     digitalWrite(bluPin,LOW);
-    OCR1A = interval;
+    OCR1C = interval;
     isOn = true;
   }
 
@@ -199,6 +200,8 @@ void crossFade(int color[3]) {
   prevB = bluVal;
   delay(hold); // Pause for optional 'wait' milliseconds before resuming the loop
 }
+
+
 
 
 
