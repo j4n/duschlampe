@@ -24,14 +24,13 @@
  * - #4/A2 blue led
  */
 
-//sets constants
-
 // trinket
-const int greenPin = 0;
 const int redPin = 1;
+const int grnPin = 0;
+const int bluPin = 4;
+
 const int tiltIn = 1;
 const int tempIn = 3;
-const int bluePin = 4;
 
 // failduino
 //const int greenPin = 0;
@@ -40,8 +39,6 @@ const int bluePin = 4;
 //const int tempIn = 4;
 //const int bluePin = 4;
 
-
-// Variables etc...
 float tilt = 1;
 float initialTilt = 1;
 float hold = 1;              // hold time between iterations (sort of)
