@@ -1,5 +1,7 @@
 /*
  vim:ft=c:expandtab:nocindent:ts=2:sw=2
+  this sketch is the first attempt at using a timer to strobe a rainbow on the trinket
+  it works by setting the interval to a mapped reading of the accelerometer
  */
 // Input
 const int tiltIn = 1;
