@@ -1,4 +1,4 @@
-/* vim:ft=c
+/* vim:ft=c:ts=2:sw=2
  */
 
 #include <avr/pgmspace.h>
@@ -9,13 +9,13 @@
 
 //gradient maps for idle animation:
 
-static const uint8_t pgmRedGradient[] PROGMEM = {126,128,129,129,130,129,129,128,128,127,127,126,127,127,127,128,128,127,130,128,130,130,129,128,127,126,127,126,127,127,128,129,130,127,129,129,130,127,123,118,114,109,106,102,99,96,95,90,85,82,81,77,75,71,66,62,57,54,50,47,43,40,39,34,31,26,25,23,17,13,10,7,3,0,0,0,0,0,1,1,0,0,0,0,0,1,0,0,0,1,2,2,2,0,0,0,0,0,0,0,0,0,0,0,0,1,2,1,2,0,1,0,1,0,0,0,0,0,0,0,0,0,1,2,1,0,0,0,};
-static const uint8_t pgmGreenGradient[] PROGMEM = {3,5,8,11,14,18,22,26,29,33,37,42,44,46,49,52,58,61,65,67,69,74,77,81,85,89,92,96,99,102,105,108,115,116,119,123,126,127,128,127,129,128,128,129,128,129,127,127,127,129,128,128,127,127,128,128,128,129,129,129,129,128,127,129,128,129,128,129,129,129,128,128,127,128,128,128,128,128,129,128,128,127,127,127,129,129,129,128,127,128,126,126,124,121,118,116,109,106,103,101,98,94,90,86,82,79,75,72,68,66,62,59,55,52,49,46,43,39,34,30,27,23,19,15,12,9,6,4,};
-static const uint8_t pgmBlueGradient[] PROGMEM = {0,0,0,0,1,0,2,1,0,0,0,0,0,0,0,0,0,0,1,0,2,0,1,0,0,0,0,0,0,1,1,1,0,0,0,1,3,3,2,0,2,0,1,0,0,0,0,0,1,1,0,0,0,0,1,4,6,10,14,18,22,24,25,29,35,37,39,41,45,48,54,57,64,67,71,74,77,79,81,85,90,94,97,98,101,106,109,113,116,121,124,128,129,129,127,128,129,128,128,126,129,128,127,129,129,128,130,128,129,127,127,127,129,128,128,126,128,127,126,128,127,127,129,127,128,126,126,124,};
+PROGMEM  prog_uint8_t pgmRedGradient[] = {255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,242,229,216,204,191,178,165,153,140,127,114,101,89,76,63,50,38,25,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,25,38,51,63,76,89,102,114,127,140,152,165,178,191,203,216,229,242,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255};
+PROGMEM  prog_uint8_t pgmGreenGradient[] = {0,12,25,38,50,63,76,89,102,114,127,140,153,165,178,191,204,216,229,242,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,242,229,216,203,191,178,165,153,140,127,114,101,89,76,63,51,38,25,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
+PROGMEM  prog_uint8_t pgmBlueGradient[] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,25,38,51,63,76,89,101,114,127,140,153,165,178,191,203,216,229,242,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,242,229,216,203,191,178,165,152,140,127,114,102,89,76,63,51,38,25,12,0};
 
 //variables for software-pwm
-uint8_t red = 64 ;
-uint8_t green = 2 ;
+uint8_t red = 64;
+uint8_t green = 2;
 uint8_t blue = 30;
 uint8_t pwmcounter = 0;
 uint8_t ledcounter = 0;
@@ -26,7 +26,8 @@ uint8_t animation0 = 0;
 uint8_t animation1 = 42;
 int8_t dir1 = -1;
 int8_t dir2 = 1;
-;
+
+uint8_t gradientIndex = 0;
 
 //variables for resistor measurement
 uint16_t milliseconds = 1;
@@ -35,7 +36,7 @@ uint8_t status = 0; //0=keine Messung, 1=Messung erfolgreich, 2=Out of Bounds
 uint8_t firstiteration = 1; //first iteration of the loop?
 uint8_t displayactive = 0;
 
-int main(void) {
+void setup() {
 	// Timer 0 konfigurieren
 	TCCR2 |= (1 << CS20); // Prescaler 0
 	// Compare Interrupt auf A erlauben
@@ -45,26 +46,42 @@ int main(void) {
 	TIFR |= (1 << OCF2);
 	// Set Timer Compare Value
 	OCR2 = 50;
-/*
+
 	// Timer 1 konfigurieren
 	//ein interrupt pro millisekunde@20mhz
 	TCCR1B = (1 << CS10) | (1 << WGM12); // Prescaler 1024
 	OCR1AH = 0xFF;
 	OCR1AL = 0xFF;
 	TIMSK = (1 << OCIE1A);
-*/
+
 	//configure outputs
 	DDRB |= (1 << PB1) | (1 << PB2) | (1 << PB3);
 
 	//enable interrupts
 	sei();
+}
 
-	while(1) {}
+void loop() {
+//	red =  pgm_read_word_near(pgmRedGradient + gradientIndex)/2;
+//	green =  pgm_read_word_near(pgmGreenGradient + gradientIndex)/2;
+//	blue =  pgm_read_word_near(pgmBlueGradient + gradientIndex)/2;
+////	red =  pgm_read_byte(&pgmRedGradient[gradientIndex/2]);
+////	green =  pgm_read_byte(&pgmGreenGradient[gradientIndex/2]);
+////	blue =  pgm_read_byte(&pgmBlueGradient[gradientIndex/2]);
+//	// Increase index and handle overflow
+//	gradientIndex ++;
+//	if (gradientIndex > sizeof(pgmRedGradient)-1){
+//		gradientIndex = 0;
+//	}
+//	red =  64;
+//	green =  32;
+//	blue =  128;
+	// Wait for a short time
+//	delay(10);
 }
 
 /*
-ISR (TIMER1_COMPA_vect)
-{
+ISR (TIMER1_COMPA_vect) {
 	if (openline) {
 		animation0 += dir1;
 		animation1 += dir2;
@@ -82,8 +99,7 @@ ISR (TIMER1_COMPA_vect)
 	}
 }*/
 
-ISR (TIMER2_COMP_vect)
-{
+ISR (TIMER2_COMP_vect) {
 
 	//compare all of em pwm-values to counter
 	if (pwmcounter > red) {
@@ -97,12 +113,11 @@ ISR (TIMER2_COMP_vect)
 	}
 	//inc pwm-counter. this is used to compare the pwm-values for each channel and toggle the ports on match.
 	pwmcounter++;
+
 	//if pwmcounter = 0, reset all chans to 1
 	if (pwmcounter > 128) {
 
 		PORTB &= ~((1 << PB1) | (1 << PB2) | (1 << PB3));
-		//PORTC &= ~((1 << PC1) | (1 << PC2) | (1 << PC3));
-		//PORTD &= ~((1 << PD0) | (1 << PD1) | (1 << PD2));
 		pwmcounter = 0;
 		
 	}
