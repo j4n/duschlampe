@@ -19,7 +19,7 @@ TARGET = malEbenSoftwarePWM
 
 # c sourcecode files
 # eg. 'test.c foo.c foobar/baz.c'
-SRC = malEbenSoftwarePWM.c
+SRC = malEbenSoftwarePWM.c uart/uart.c
 
 # asm sourcecode files
 # eg. 'interrupts.S foobar/another.S'
