@@ -5,3 +5,4 @@
 *.ino
 *.lst
 *.o
+.dep
