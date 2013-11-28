@@ -12,10 +12,11 @@ LED is RGB common cathode (SparkFun sku: COM-09264 or equivalent)
 #define DELAY  1
 #define STROBE 1
 
-const int ledPins[3] = { 1, 0, 4 };
+//const int ledPins[3] = { 1, 0, 4 }; // trinket
+const int ledPins[3] = { 9, 10, 11 };
 
-const int tiltIn = 1;
-const int tempIn = 3;
+const int tiltIn = 0;
+const int tempIn = 2;
 int tilt;
 
 boolean isOff = true;
