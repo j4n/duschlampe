@@ -3,6 +3,7 @@
 #define UART_BAUD_RATE 9600
 
 #include <avr/io.h>
+#include <avr/delay.h>
 #include <avr/interrupt.h>
 #include "uart/uart.h"
 
@@ -14,39 +15,52 @@ uint8_t b = 0;
 uint16_t ay = 0;
 
 char buffer[7];
+uint8_t isOn;
+uint8_t interval = 128;
 
 uint16_t readADC(uint8_t channel);
 long map(long x, long in_min, long in_max, long out_min, long out_max);
 
 int main(void) {
-	uart_init( UART_BAUD_SELECT(UART_BAUD_RATE,F_CPU) ); 
-
-	TCCR0 |= (1 << CS00); // prescaler
-	TIMSK |= (1 << TOIE0);
+	// init stuff
 	// Configure outputs
-	DDRB |= (1 << PB1) | (1 << PB2) | (1 << PB3);
+	DDRB |= (1 << PB0) | (1 << PB1) | (1 << PB2);
+
+	// Timer0 for Software PWM
+	TCCR0 |= (1 << CS00); // prescaler
+	TIMSK |= (1 << TOIE0); // timer overflow interrupt
 	//pinMode(11, OUTPUT); // 11 = PB3
+
+	// Timer 2 for Strobing, compare value in OCR2
+	TCCR2 |= (1 << WGM21); // wave generation mode
+	TCCR2 |= (1 << CS21); // prescaler clk/8
+	//TIMSK |= (1 << OCIE2); // match & compare interrupt
+	OCR2 = 128;
+	
 	sei();
 	
+	uart_init( UART_BAUD_SELECT(UART_BAUD_RATE,F_CPU) ); 
+	
+	// end init
+
 	while (1) { //main loop
-		
-		int x = (readADC(1));
-//		x =- 300;
-//		r=(x);
-		ay = readADC(1);
-		r = map(ay, 570, 670, 0, 255);
+		//ay = readADC(1);
+		//r = map(ay, 570, 700, 0, 255);
+		r ++;
+		_delay_ms(20);
 		//r = map(ay, 450, 700, 0, 255);
-    itoa( ay, buffer, 10);   // convert interger into string (decimal format)
-    uart_puts(buffer);        // and transmit string to UART
-		uart_putc('/');
-    itoa( r, buffer, 10);   // convert interger into string (decimal format)
-    uart_puts(buffer);        // and transmit string to UART
-		uart_putc('\n');
+    //itoa( ay, buffer, 10);   // convert interger into string (decimal format)
+    //uart_puts(buffer);        // and transmit string to UART
+		//uart_putc('/');
+    //itoa( r, buffer, 10);   // convert interger into string (decimal format)
+    //uart_puts(buffer);        // and transmit string to UART
+		//uart_putc('\n');
 	}
 }
 
 ISR (TIMER0_OVF_vect) {
-	PORTB ^= (1 << PB3);
+	PORTB ^= (1 << PB0);
+	/*
 	counter++;
 
 	if (counter > g) PORTB &= ~(1 << PB0);
@@ -59,6 +73,34 @@ ISR (TIMER0_OVF_vect) {
 		if (r > 0) PORTB |= (1 << PB2);
 		counter = 0;
 	}
+	*/
+}
+
+ISR (TIMER2_COMP_vect) {
+  PORTB ^=  (1<<PB0);
+	
+	/*
+	  if (isOn) {
+    //analogWrite(redPin, intensity);
+		//TCCR0 |= (1 << CS00); // restart timer0
+    //TIMSK |= (1 << TOIE0);
+		
+		r = 0;
+		OCR2 = 80;
+    isOn = 0;
+  }
+  else {
+		//TIMSK &= ~(1 << TOIE0);
+		//PORTB &= ~(1 << PB0);
+		//PORTB &= ~(1 << PB1);
+		//PORTB &= ~(1 << PB2);
+    r = 255;
+    //digitalWrite(redPin,LOW);
+    OCR2 = interval;
+		//TCCR0 = 0; // stop timer0
+    isOn = 1;
+  }
+	*/
 }
 
 uint16_t readADC(uint8_t channel) {
