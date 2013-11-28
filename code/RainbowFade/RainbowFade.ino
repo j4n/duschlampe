@@ -12,9 +12,9 @@
 //////////////////////////////////////////////////////
 
 // define LED pins
-#define LED_RED      1
-#define LED_GREEN    0
-#define LED_BLUE     4
+#define LED_RED      9
+#define LED_GREEN    10
+#define LED_BLUE     11
 
 // A gradient for each channel
 PROGMEM  prog_uint8_t gradientRed [] = {255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,242,229,216,204,191,178,165,153,140,127,114,101,89,76,63,50,38,25,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,25,38,51,63,76,89,102,114,127,140,152,165,178,191,203,216,229,242,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255};
@@ -28,8 +28,6 @@ byte gradientIndex = 0;
 int singleDelay = 1;
 
 void setup(){
-  PWM4_init();
-
   // setup LED pins
   pinMode(LED_RED, OUTPUT);
   pinMode(LED_GREEN, OUTPUT);
@@ -47,7 +45,7 @@ void loop(){
   }
 
   for (int blue=0; blue < 256; blue ++){
-    analogWrite4(blue);
+    analogWrite(LED_BLUE, blue);
     delay(singleDelay);
   }
 
@@ -67,7 +65,7 @@ void loop(){
   }
 
   for (int blue=255; blue >= 0; blue --){
-    analogWrite4(blue);
+    analogWrite(LED_BLUE, blue);
     delay(singleDelay);
   }
  
@@ -76,7 +74,7 @@ void loop(){
     // Write inversed RGB-Values at index position
     analogWrite(LED_RED, pgm_read_word_near(gradientRed + gradientIndex));
     analogWrite(LED_GREEN, pgm_read_word_near(gradientGreen + gradientIndex));
-    analogWrite4(pgm_read_word_near(gradientBlue + gradientIndex));
+    analogWrite(LED_BLUE, pgm_read_word_near(gradientBlue + gradientIndex));
     // Increase index and handle overflow
     gradientIndex ++;
     if (gradientIndex > sizeof(gradientRed)-1){
@@ -85,18 +83,4 @@ void loop(){
     // Wait for a short time
     delay(100);
   }
-}
-
-
-void PWM4_init() {
-  // Set up PWM on Trinket GPIO #4 (PB4, pin 3) using Timer 1
-  TCCR1 = _BV (CS10);           // no prescaler
-  GTCCR = _BV (COM1B1) | _BV (PWM1B);  //  clear OC1B on compare
-  OCR1B = 127;                  // duty cycle initialize to 50%
-  OCR1C = 255;                  // frequency
-}
- 
-// Function to allow analogWrite on Trinket GPIO #4 
-void analogWrite4(uint8_t duty_value) {  
-  OCR1B = duty_value;  // duty may be 0 to 255 (0 to 100%)
 }
